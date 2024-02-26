@@ -1,0 +1,21 @@
+INHERIT: ../base.yml
+site_name: Casos de uso de ataque-defensa
+
+site_dir: ../../docs/referencias
+
+plugins:
+  - search:
+      lang: es
+
+# Page tree
+nav:
+  - Inicio: index.md
+  - Desarrollo: desarrollo.md
+  - Rubricas: rubricas.md
+  - Despliegue: despliegue.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/fpcibersec
+      name: Ciberseguridad del IES Alberti en Twitter

@@ -1,0 +1,4451 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../ud1/">
+      
+      
+        <link rel="next" href="../ud3/">
+      
+      
+      <link rel="icon" href="../assets/logo-alberties.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
+    
+    
+      
+        <title>UD2 - AFI - Apuntes y referencias</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.fad675c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#windows-forensic-analysis" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="AFI - Apuntes y referencias" class="md-header__button md-logo" aria-label="AFI - Apuntes y referencias" data-md-component="logo">
+      
+  <img src="../assets/logo-blanco.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AFI - Apuntes y referencias
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UD2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ud1/" class="md-tabs__link">
+        
+  
+    
+  
+  UD1
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  UD2
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ud3/" class="md-tabs__link">
+        
+  
+    
+  
+  UD3
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ud4/" class="md-tabs__link">
+        
+  
+    
+  
+  UD4
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ud5/" class="md-tabs__link">
+        
+  
+    
+  
+  UD5
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ud6/" class="md-tabs__link">
+        
+  
+    
+  
+  UD6
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ud7/" class="md-tabs__link">
+        
+  
+    
+  
+  UD7
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ud8/" class="md-tabs__link">
+        
+  
+    
+  
+  UD8
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AFI - Apuntes y referencias" class="md-nav__button md-logo" aria-label="AFI - Apuntes y referencias" data-md-component="logo">
+      
+  <img src="../assets/logo-blanco.svg" alt="logo">
+
+    </a>
+    AFI - Apuntes y referencias
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UD1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    UD2
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    UD2
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artifacts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Artifacts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-artifacts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Artifacts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principales-artifacts-en-sistemas-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principales Artifacts en Sistemas Windows
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#registro-de-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registro de Windows
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Registro de Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estructura-del-registro-de-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estructura del Registro de Windows
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registros-asociados-al-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registros asociados al usuario
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persistencia-del-registro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persistencia del registro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backups-del-registro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backups del registro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borrado-del-registro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Borrado del registro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#last-write-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Last Write Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#herramientas-de-analisis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herramientas de análisis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sam" class="md-nav__link">
+    <span class="md-ellipsis">
+      SAM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SAM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identificando-usuarios-y-grupos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identificando Usuarios y Grupos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passwords-en-blanco" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passwords en blanco
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analisis-del-registro-de-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Análisis del registro de Windows
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Análisis del registro de Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identificar-la-version-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identificar la versión del sistema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nombre-de-la-maquina" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nombre de la máquina
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zona-horaria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zona horaria
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fecha-de-ultimo-acceso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fecha de último acceso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfaces-de-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interfaces de Red
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#historico-de-redes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Redes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cuando-se-conecto-a-una-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuando se conectó a una Red
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carpetas-compartidas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Carpetas Compartidas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autostart-programs" class="md-nav__link">
+    <span class="md-ellipsis">
+      AutoStart Programs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informacion-de-apagado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Información de Apagado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#busqueda-en-win7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Búsqueda en Win7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#busqueda-en-win-8-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Búsqueda en Win 8 /10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typed-paths-windows-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Typed Paths Windows 10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recent-docs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recent Docs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#office-recent-docs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Office Recent Docs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auroguardado-de-ficheros-office" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auroguardado de Ficheros Office
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eventos-de-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eventos de Windows
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Eventos de Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-eventos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Eventos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ubicacion-de-los-archivos-de-eventos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ubicación de los Archivos de Eventos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-podemos-obtener-de-los-eventos-de-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué podemos obtener de los eventos de Windows?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventos-de-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eventos de Seguridad
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventos-relacionados-con-la-autenticacion-del-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eventos relacionados con la autenticación del usuario
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#herramientas-para-analisis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herramientas para Análisis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analisis-de-casuisticas-mas-comunes-en-cuanto-a-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Análisis de casuísticas más comunes en cuanto a seguridad.
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dispositivos-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dispositivos USB
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dispositivos USB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mass-storage-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mass Storage Device
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#picture-transfer-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Picture Transfer Protocol
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#media-transfer-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media Transfer Protocol
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identificar-evidencias-de-uso-dispositivos-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identificar evidencias de uso dispositivos USB
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usbstor" class="md-nav__link">
+    <span class="md-ellipsis">
+      USBStor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identificacion-de-vidpid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identificación de VID/PID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtener-el-nombre-del-volumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obtener el nombre del volumen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtener-la-ultima-unidad-asignada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obtener la última unidad asignada
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localizar-el-usuario-que-ha-utilizado-el-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Localizar el usuario que ha utilizado el USB
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volume-serial-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      Volume Serial Number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timestamps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timestamps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identificacion-y-analisis-de-artefactos-forenses-propios-del-sistema-de-archivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identificación y análisis de artefactos forenses propios del sistema de archivos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identificación y análisis de artefactos forenses propios del sistema de archivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#index-records" class="md-nav__link">
+    <span class="md-ellipsis">
+      $INDEX Records
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shadow-copies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shadow Copies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Carving
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Carving">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-ocurre-cuando-se-borra-un-fichero-mediante-el-sistema-operativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué ocurre cuando se borra un fichero mediante el sistema operativo?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recuperacion-de-datos-mediante-el-propio-sistema-de-archivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recuperación de datos mediante el propio sistema de archivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recuperacion-de-datos-mediante-carving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recuperación de datos mediante carving
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tecnica-header-footer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Técnica Header - Footer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stream-carving-vs-file-carving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stream Carving vs File Carving
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timeline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metadatos-de-ficheros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metadatos de ficheros
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metadatos de ficheros">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lastvisited-mru-vs-opensavemru" class="md-nav__link">
+    <span class="md-ellipsis">
+      LastVisited MRU vs OpenSaveMRU
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LastVisited MRU vs OpenSaveMRU">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lastvisitedmru" class="md-nav__link">
+    <span class="md-ellipsis">
+      LastVisitedMRU
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opensavemru" class="md-nav__link">
+    <span class="md-ellipsis">
+      OpenSaveMRU
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ultimos-comandos-ejecutados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Últimos Comandos Ejecutados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-assistkey" class="md-nav__link">
+    <span class="md-ellipsis">
+      User AssistKey
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shell-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shell Items
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shell Items">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recent-documents-lnk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recent Documents (LNK)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jumplists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jumplists
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shellbags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shellbags
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thumbnails" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thumbnails
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thumbcache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thumbcache
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#papelera-de-reciclaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      Papelera de Reciclaje
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejecucion-de-programas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejecución de programas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejecución de programas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows-prefetch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows Prefetch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#superfetch" class="md-nav__link">
+    <span class="md-ellipsis">
+      SuperFetch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srum" class="md-nav__link">
+    <span class="md-ellipsis">
+      SRUM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appcompatcache-shimcache" class="md-nav__link">
+    <span class="md-ellipsis">
+      AppCompatCache (ShimCache)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amcachehve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amcache.hve
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recentfilecache" class="md-nav__link">
+    <span class="md-ellipsis">
+      RecentFileCache
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tareas-programadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tareas Programadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Servicios
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navegadores
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#email-forensics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Email Forensics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Email Forensics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cabecera-de-correo-electronico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cabecera de correo electrónico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapi-headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mapi Headers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outlook-pst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Outlook PST
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outlook-ost" class="md-nav__link">
+    <span class="md-ellipsis">
+      Outlook OST
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recuperacion-de-adjuntos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recuperación de Adjuntos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thunderbird-mbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thunderbird MBOX
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plataformas-y-herramientas-de-analisis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plataformas y herramientas de análisis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plataformas y herramientas de análisis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#algunos-repositorios-muy-conocidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algunos repositorios muy conocidos:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-de-plataformas-preconfiguradas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos de plataformas preconfiguradas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows-forensics-cheat-sheets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows Forensics Cheat Sheets
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UD3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UD4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UD5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UD6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UD7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ud8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UD8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artifacts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Artifacts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-artifacts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Artifacts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principales-artifacts-en-sistemas-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principales Artifacts en Sistemas Windows
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#registro-de-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registro de Windows
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Registro de Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estructura-del-registro-de-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estructura del Registro de Windows
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registros-asociados-al-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registros asociados al usuario
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persistencia-del-registro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persistencia del registro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backups-del-registro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backups del registro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borrado-del-registro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Borrado del registro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#last-write-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Last Write Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#herramientas-de-analisis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herramientas de análisis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sam" class="md-nav__link">
+    <span class="md-ellipsis">
+      SAM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SAM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identificando-usuarios-y-grupos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identificando Usuarios y Grupos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passwords-en-blanco" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passwords en blanco
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analisis-del-registro-de-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Análisis del registro de Windows
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Análisis del registro de Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identificar-la-version-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identificar la versión del sistema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nombre-de-la-maquina" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nombre de la máquina
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zona-horaria" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zona horaria
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fecha-de-ultimo-acceso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fecha de último acceso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfaces-de-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interfaces de Red
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#historico-de-redes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Redes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cuando-se-conecto-a-una-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuando se conectó a una Red
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carpetas-compartidas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Carpetas Compartidas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autostart-programs" class="md-nav__link">
+    <span class="md-ellipsis">
+      AutoStart Programs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#informacion-de-apagado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Información de Apagado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#busqueda-en-win7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Búsqueda en Win7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#busqueda-en-win-8-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Búsqueda en Win 8 /10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typed-paths-windows-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Typed Paths Windows 10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recent-docs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recent Docs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#office-recent-docs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Office Recent Docs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auroguardado-de-ficheros-office" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auroguardado de Ficheros Office
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eventos-de-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eventos de Windows
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Eventos de Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-eventos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Eventos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ubicacion-de-los-archivos-de-eventos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ubicación de los Archivos de Eventos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-podemos-obtener-de-los-eventos-de-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué podemos obtener de los eventos de Windows?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventos-de-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eventos de Seguridad
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventos-relacionados-con-la-autenticacion-del-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eventos relacionados con la autenticación del usuario
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#herramientas-para-analisis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herramientas para Análisis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analisis-de-casuisticas-mas-comunes-en-cuanto-a-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Análisis de casuísticas más comunes en cuanto a seguridad.
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dispositivos-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dispositivos USB
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dispositivos USB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mass-storage-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mass Storage Device
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#picture-transfer-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Picture Transfer Protocol
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#media-transfer-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media Transfer Protocol
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identificar-evidencias-de-uso-dispositivos-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identificar evidencias de uso dispositivos USB
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usbstor" class="md-nav__link">
+    <span class="md-ellipsis">
+      USBStor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identificacion-de-vidpid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identificación de VID/PID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtener-el-nombre-del-volumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obtener el nombre del volumen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtener-la-ultima-unidad-asignada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obtener la última unidad asignada
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localizar-el-usuario-que-ha-utilizado-el-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Localizar el usuario que ha utilizado el USB
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volume-serial-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      Volume Serial Number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timestamps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timestamps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identificacion-y-analisis-de-artefactos-forenses-propios-del-sistema-de-archivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identificación y análisis de artefactos forenses propios del sistema de archivos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identificación y análisis de artefactos forenses propios del sistema de archivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#index-records" class="md-nav__link">
+    <span class="md-ellipsis">
+      $INDEX Records
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shadow-copies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shadow Copies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Carving
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Carving">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-ocurre-cuando-se-borra-un-fichero-mediante-el-sistema-operativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué ocurre cuando se borra un fichero mediante el sistema operativo?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recuperacion-de-datos-mediante-el-propio-sistema-de-archivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recuperación de datos mediante el propio sistema de archivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recuperacion-de-datos-mediante-carving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recuperación de datos mediante carving
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tecnica-header-footer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Técnica Header - Footer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stream-carving-vs-file-carving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stream Carving vs File Carving
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timeline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metadatos-de-ficheros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metadatos de ficheros
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metadatos de ficheros">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lastvisited-mru-vs-opensavemru" class="md-nav__link">
+    <span class="md-ellipsis">
+      LastVisited MRU vs OpenSaveMRU
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LastVisited MRU vs OpenSaveMRU">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lastvisitedmru" class="md-nav__link">
+    <span class="md-ellipsis">
+      LastVisitedMRU
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opensavemru" class="md-nav__link">
+    <span class="md-ellipsis">
+      OpenSaveMRU
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ultimos-comandos-ejecutados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Últimos Comandos Ejecutados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-assistkey" class="md-nav__link">
+    <span class="md-ellipsis">
+      User AssistKey
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shell-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shell Items
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shell Items">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recent-documents-lnk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recent Documents (LNK)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jumplists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jumplists
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shellbags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shellbags
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thumbnails" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thumbnails
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thumbcache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thumbcache
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#papelera-de-reciclaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      Papelera de Reciclaje
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejecucion-de-programas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejecución de programas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejecución de programas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows-prefetch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows Prefetch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#superfetch" class="md-nav__link">
+    <span class="md-ellipsis">
+      SuperFetch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srum" class="md-nav__link">
+    <span class="md-ellipsis">
+      SRUM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appcompatcache-shimcache" class="md-nav__link">
+    <span class="md-ellipsis">
+      AppCompatCache (ShimCache)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amcachehve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amcache.hve
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recentfilecache" class="md-nav__link">
+    <span class="md-ellipsis">
+      RecentFileCache
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tareas-programadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tareas Programadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Servicios
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navegadores
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#email-forensics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Email Forensics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Email Forensics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cabecera-de-correo-electronico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cabecera de correo electrónico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapi-headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mapi Headers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outlook-pst" class="md-nav__link">
+    <span class="md-ellipsis">
+      Outlook PST
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outlook-ost" class="md-nav__link">
+    <span class="md-ellipsis">
+      Outlook OST
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recuperacion-de-adjuntos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recuperación de Adjuntos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thunderbird-mbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thunderbird MBOX
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plataformas-y-herramientas-de-analisis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plataformas y herramientas de análisis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plataformas y herramientas de análisis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#algunos-repositorios-muy-conocidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algunos repositorios muy conocidos:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-de-plataformas-preconfiguradas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos de plataformas preconfiguradas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows-forensics-cheat-sheets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows Forensics Cheat Sheets
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="windows-forensic-analysis">Windows Forensic Analysis</h1>
+<p><center>
+<img alt="" src="../assets/ud2/ud2-windows-forensic-analysis.png" />
+</center></p>
+<h2 id="introduccion">Introducción</h2>
+<p>En esta fase llevaremos a cabo un estudio pormenorizado de los hallazgos de la etapa  anterior. Es  durante el análisis que el responsable del caso identificará aquellos comportamientos, conexiones, ficheros y demás aspectos que puedan ser susceptibles de un uso malintencionado. </p>
+<p>Para esto, el analista puede hacer uso de las herramientas que crea conveniente, así como de referencias externas, siempre y cuando no se altere el estado inicial de las pruebas.</p>
+<p>Toda la información relevante debe ser recogida y categorizada de tal forma que se pueda añadir posteriormente al informe de manera comprensible y clara. </p>
+<h2 id="objetivos">Objetivos</h2>
+<ul>
+<li>
+<p>Analizar las evidencias de manera manual y automática. </p>
+</li>
+<li>
+<p>Identificar los principales artefactos de los sistemas operativos windows. </p>
+</li>
+<li>
+<p>Documentar el proceso realizado. </p>
+</li>
+<li>
+<p>Establecer la línea temporal. </p>
+</li>
+<li>
+<p>Mantener la cadena de custodia. </p>
+</li>
+</ul>
+<h2 id="artifacts">Artifacts</h2>
+<p>Los artifacts en el contexto del análisis forense digital son datos generados por el sistema operativo y las aplicaciones, que registran las actividades del usuario y del sistema. Sirven para reconstruir eventos, identificar acciones y establecer líneas de tiempo, siendo cruciales para entender el comportamiento en el sistema investigado.</p>
+<h2 id="tipos-de-artifacts">Tipos de Artifacts</h2>
+<ul>
+<li>
+<p><strong>Artifacts del Sistema</strong>: Incluyen registros de eventos, archivos de configuración, y archivos de sistema que almacenan datos operativos.</p>
+</li>
+<li>
+<p><strong>Artifacts de Usuario</strong>: Documentos, imágenes, videos y cualquier otro archivo creado por el usuario.</p>
+</li>
+<li>
+<p><strong>Artifacts de Aplicaciones</strong>: Historiales de navegación, logs de aplicaciones, y registros de uso de software.</p>
+</li>
+</ul>
+<h2 id="principales-artifacts-en-sistemas-windows">Principales Artifacts en Sistemas Windows</h2>
+<ul>
+<li>
+<p><strong>Registro de Windows</strong>: Incluye información de configuración del sistema, instalación de software, y perfiles de usuario.</p>
+</li>
+<li>
+<p><strong>Archivos Prefetch</strong>: Utilizados para la optimización del arranque de aplicaciones, contienen datos sobre programas ejecutados.</p>
+</li>
+<li>
+<p><strong>Event Logs (Registros de Eventos)</strong>: Registros detallados de actividades del sistema, errores, y acciones de seguridad.</p>
+</li>
+<li>
+<p><strong>Archivos LNK (Accesos Directos)</strong>: Contienen información sobre los archivos y aplicaciones a los que el usuario ha accedido.</p>
+</li>
+<li>
+<p><strong>Thumbcache (Miniaturas)</strong>: Almacena miniaturas de imágenes y videos visualizados.</p>
+</li>
+<li>
+<p><strong>Web Browser Artifacts</strong>: Historiales, cookies, y cachés de navegadores como Edge o Internet Explorer.</p>
+</li>
+<li>
+<p><strong>$MFT (Master File Table)</strong>: Registro de todos los archivos y carpetas en una partición NTFS.</p>
+</li>
+<li>
+<p><strong>Jump Lists</strong>: Listas de archivos y aplicaciones recientemente abiertos.</p>
+</li>
+</ul>
+<h2 id="registro-de-windows">Registro de Windows</h2>
+<p>El <a href="https://learn.microsoft.com/es-es/troubleshoot/windows-server/performance/windows-registry-advanced-users#description-of-the-registry">Registro de Windows</a> es una base de datos jerarquica que almacena configuraciones, opciones y configuraciones del sistema operativo y aplicaciones. Es una fuente rica en información forense que puede proporcionar detalles sobre las actividades del usuario y del sistema.</p>
+<h3 id="estructura-del-registro-de-windows">Estructura del Registro de Windows</h3>
+<p>El Registro de Windows se organiza en una jerarquía de colmenas, keys (claves) y valores:</p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.025.png" />
+</center></p>
+<p>Veamos cada uno de los elementos:</p>
+<p><strong>1. Colmenas (Hives).</strong> Son archivos que contienen el conjunto de keys, subkeys y valores. Las principales colmenas son:</p>
+<ul>
+<li>HKEY_CURRENT_USER (HKCU): Contiene configuraciones específicas del usuario actual.</li>
+<li>HKEY_USERS (HKU): Incluye información de todos los usuarios del sistema.</li>
+<li>HKEY_LOCAL_MACHINE (HKLM): Almacena configuraciones del sistema y software instalado.</li>
+<li>HKEY_CLASSES_ROOT (HKCR): Asocia tipos de archivos con programas.</li>
+<li>HKEY_CURRENT_CONFIG (HKCC): Información de configuración del hardware en uso.</li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/registry_editor.png" />
+</center></p>
+<p>Una colmena en el Registro de Windows es el nombre dado a una sección principal del registro que contiene claves, subclaves y valores del registro. </p>
+<p>Todas las claves que se consideran colmenas comienzan con «HKEY» y se encuentran en la raíz, o en la parte superior de la jerarquía del registro, por lo que también se denominan a veces claves raíz o colmenas del sistema central.</p>
+<p><strong>2. Keys y Subkeys.</strong> Funcionan como "carpetas" o "directorios" dentro del Registro, organizan la información en una estructura jerárquica. </p>
+<p>Por ejemplo: </p>
+<p>HKEY_LOCAL_MACHINE\System es una key que contiene varias subkeys relacionadas con la configuración del sistema.</p>
+<p><strong>3. Valores.</strong> Son los datos almacenados dentro de las keys y subkeys. Tienen un nombre y un tipo de dato asociado (como REG_SZ para cadenas de texto, REG_DWORD para números, etc.).</p>
+<p>Por ejemplo: </p>
+<p>Dentro de HKEY_CURRENT_USER\Control Panel\Desktop, el valor Wallpaper indica la ruta del fondo de escritorio actual.</p>
+<h3 id="registros-asociados-al-usuario">Registros asociados al usuario</h3>
+<p>NTUSER.DAT y USRCLASS.DAT son dos archivos que forman parte de las colmenas del Registro de Windows y almacenan diferentes tipos de información relacionada con las configuraciones y preferencias del usuario. </p>
+<p><strong>1. NTUSER.DAT</strong> </p>
+<p>Este archivo almacena la configuración y preferencias del usuario específico. Incluye información como la configuración del escritorio, historial de navegación web, rutas de archivos recientes, preferencias de software, etc.</p>
+<p>Localización:</p>
+<ul>
+<li>
+<p>C:\Users{username}\NTUSER.DAT -&gt; A partir de WinVista-Win10 </p>
+</li>
+<li>
+<p>C:\Documents and Settings{username}\NTUSER.dat -&gt; Hasta XP. </p>
+</li>
+</ul>
+<p><strong>2. USRCLASS.DAT</strong> </p>
+<p>Este archivo está más enfocado en la configuración y datos relacionados con las aplicaciones específicas utilizadas por el usuario, en particular aquellas asociadas con la interfaz de usuario y la experiencia de usuario de Windows.</p>
+<p>Localización:</p>
+<ul>
+<li>C:\Users{username}\AppData\Local\Microsoft\Windows\USRCLASS.DAT -&gt; Solo disponible a partir de Win7/Win8/Win10 </li>
+</ul>
+<p>USRCLASS.DAT es muy importante porque contiene información en cuanto la ejecución de programas indicando que directorios y han sido abiertos o cerrados. </p>
+<p><strong>Estos registros de usuario son únicos para el usuario del sistema, por lo que siempre habrá uno para cada usuario.</strong></p>
+<h3 id="persistencia-del-registro">Persistencia del registro</h3>
+<p>Los archivos auxiliares de todos los subárboles excepto HKEY_CURRENT_USER se encuentran en la carpeta %SystemRoot%\System32\Config</p>
+<p>Los archivos auxiliares de HKEY_CURRENT_USER están en la carpeta %SystemRoot%\Profiles\Username. </p>
+<p><center>
+<img alt="" src="../assets/ud2/registro2.png" />
+</center></p>
+<p>Si abrimos nuestro Sistema y ejecutamos regedit.exe, veremos que la raíz del registro es la siguiente: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.023.png" />
+</center></p>
+<h3 id="backups-del-registro">Backups del registro</h3>
+<p>Los sistemas Windows disponen de un backup del registro localizado en %Windir%\System32\Config\RegBack.</p>
+<p>Esta copia de seguridad se realiza automativamenteb cada 10 días, y solo está disponible de Windows Vista en adelante y de Windows 2008 Server en adelante. Otro lugar donde podíamos encontrar una copia del registro sería en las Shadow Copies. </p>
+<p><strong>Nota</strong>: <a href="https://learn.microsoft.com/es-es/troubleshoot/windows-client/deployment/system-registry-no-backed-up-regback-folder">Ya no se realiza una copia de seguridad del registro del sistema en la carpeta RegBack a partir de la versión 1803 de Windows 10.</a></p>
+<h3 id="borrado-del-registro">Borrado del registro</h3>
+<p>Los Hives del registro de Windows tiene espacio libre similar al sistema de archivos, por lo que se podrán recuperar keys borradas. Una clave borrada es marcada, pero no es deslocalizada, por lo que permite la recuperación de: </p>
+<ul>
+<li>Keys, Values y TimeStamps </li>
+</ul>
+<p><strong>A día de hoy no hay herramientas anti forenses que limpien completamente el espacio libre del registro.</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.026.png" />
+</center></p>
+<p>En la <strong>imagen anterior</strong> vemos la herramienta <strong>Registry Explorer</strong> donde aparece en rojo las claves-valor que han sido borradas. Más adelante veremos cómo funciona esta herramienta. </p>
+<h3 id="last-write-time">Last Write Time</h3>
+<p>Dentro del registro también hay timestamps y se le llama “Last Write Time”. Como bien dice su nombre, es la última vez que se modifica la key-value del registro. Para poder interpretar este campo como una fecha real, es necesario realizar pruebas con la aplicación que escriba en el registro y poder contextualizar la información. </p>
+<p>Otro elemento que indica un orden temporal es el <strong>MRU</strong>, que es el acrónimo de Most Recenty Used. </p>
+<ul>
+<li>Existen varios MRU que son responsables del drop-down sobre un menú que aparece o cuando tecleas algo en Internet Explorer. </li>
+<li>En el registro, los MRULists son una Key-Value que son responsables de mantener registrado las adiciones al registro. Por lo tanto, se puede determinar en qué orden se añadió. </li>
+<li>La MRUList puede variar en función del sistema operativo. </li>
+<li>El Last write de la key será la fecha del primer MRULIst que ocurrió </li>
+</ul>
+<h3 id="herramientas-de-analisis">Herramientas de análisis</h3>
+<p><strong>Windows Registry Recovery</strong></p>
+<p>Es otro software que permite analizar el registro de Windows, de manera visual. Es muy útil para obtener qué aplicaciones han sido instaladas, como podemos apreciar en la imagen inferior. </p>
+<p>En función del Hive que estemos examinando, la opción que seleccionemos de la izquierda dispondrá o no de información. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.032.jpeg" />
+</center></p>
+<p><strong>** Ver Video:09-WRR</strong> </p>
+<p><strong>RegRipper</strong></p>
+<p>Es una herramienta escrita en Perl que se encarga de analizar los hives del registro. El análisis no es tan user friendly como lo que presenta Registry Explorer, pero también dispone de unos bookmarks o plugins de localizaciones de key-value del Registro con información relevante: </p>
+<p><a href="https://github.com/keydet89/RegRipper2.8/tree/master/plugins">https://github.com/keydet89/RegRipper2.8/tree/master/plugins</a> </p>
+<p>En RegRipper tenemos que indicar mediante el campo de Profile cual es el tipo de hive que va analizar. De esta manera cargará los plugins acordemente. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.031.png" />
+</center></p>
+<p>El reporte de RegRipper es un fichero de texto que puede ser abierto con cualquier editor. ** Ver video: 002-RegRipper </p>
+<h2 id="sam">SAM</h2>
+<p>El fichero SAM o hive SAM, contiene todos los usuarios y grupos que hay a nivel local en el sistema Windows. También dispone de los hashes pertinentes que son validados cuando un usuario hace logon. </p>
+<h3 id="identificando-usuarios-y-grupos">Identificando Usuarios y Grupos</h3>
+<p>Del fichero SAM podemos obtener a qué grupo está asignado el usuario, como por ejemplo: </p>
+<ul>
+<li>Administradores </li>
+<li>Usuarios </li>
+<li>Usuarios del escritorio Remoto </li>
+</ul>
+<p>¿Qué información podemos obtener del registro SAM del usuario? </p>
+<p>La información se encuentra en SAM\Domains\Account\Users y contiene: </p>
+<ul>
+<li>El usuario y el RID asociado a él. </li>
+<li>Variedad de información asociado al usuario </li>
+<li>Último login (vacío si se utiliza una cuenta Microsoft para hacer login) </li>
+<li>Último login fallido </li>
+<li>Contador de login </li>
+<li>Política de passwords </li>
+<li>Cuando se creó la cuenta. </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.033.png" />
+</center></p>
+<p>En la imagen anterior se ve el detalle que el usuario “ismis” utiliza una cuenta Microsoft para hacer login, debido a que el campo “Last Logon Time” está vacío. </p>
+<p>Con la herramienta WRR se puede identificar correctamente: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.034.png" />
+</center></p>
+<h3 id="passwords-en-blanco">Passwords en blanco</h3>
+<p>Windows 10 implementa un cifrado de hashes, que puede inducir a error, si no es analizado correctamente. Si la herramienta no es capaz de interpretar este nuevo cifrado aparecerá que el NTLM-HASH es un blanco: 31d6cfe0d16ae931b73c59d7e0c089c0 </p>
+<p>Para poder ver los hashes es necesario tener el SAM y el SYSTEM del sistema. Gracias a la herramienta <strong>Windows Password Recovery</strong> de Passcape podríamos verificar su hash: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.035.png" />
+</center></p>
+<p><strong>Windows Password Recovery</strong> si puede leer el nuevo cifrado AES 128 de Windows, mimikatz también. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.036.png" />
+</center></p>
+<p>Si no lo leyese bien, aparecería un hash blanco: 31d6cfe0d16ae931b73c59d7e0c089c0 </p>
+<h2 id="analisis-del-registro-de-windows">Análisis del registro de Windows</h2>
+<p>A continuación, vamos a identificar las principales claves-valor del registro que pueden ser susceptibles de ser usadas en caso de realizar una investigación. </p>
+<h3 id="identificar-la-version-del-sistema">Identificar la versión del sistema</h3>
+<p>Este artefacto forense, como bien el título, nos va permitir identificar en el registro la versión del sistema. </p>
+<p>Ruta: <strong>Software\Microsoft\Windows NT\CurrentVersion determina:</strong> </p>
+<ul>
+<li>La versión de Windows </li>
+<li>Service Pack instalador </li>
+<li>Fecha de instalación en formato Epoch Time (número de segundos desde el 1/1/1970) </li>
+<li>En Windows tiene el campo Install Time que sigue el formato de Windows 64 bit, respecto al tiempo </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.037.jpeg" />
+</center></p>
+<p>En el registro encontraremos la fecha (Install Time) en decimal, la convertimos a hexadecimal y la pasamos por la herramienta Dcode. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.038.png" />
+</center></p>
+<p>DCode: <a href="https://www.digital-detective.net/dcode/">https://www.digital-detective.net/dcode/</a> </p>
+<h3 id="nombre-de-la-maquina">Nombre de la máquina</h3>
+<p>Es útil ya que el nombre de la máquina aparece en otras localizaciones pero generalmente se usa para asegurar que estamos trabajando con el equipo correcto. </p>
+<p>Ruta: <strong>System\ControlSet001\Control\ComputerName\ComputerName</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.039.png" />
+</center></p>
+<h3 id="zona-horaria">Zona horaria</h3>
+<p>Es útil para correlacionar correctamente la actividad en la evidencia: Logs internos del sistema y timestamps estarán basadas en esta información Antes habíamos visto los timestamps del registro están en UTC. </p>
+<p>FAT está asociado a la hora local del sistema y por lo tanto a este parámetro. NTFS está en UTC. </p>
+<p>Ruta: <strong>System\ControlSet001\Control\TimeZoneInformation</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.040.png" />
+</center></p>
+<p>Romance Standard Time = Central European TIME: </p>
+<p><a href="https://en.wikipedia.org/wiki/Central_European_Time">https://en.wikipedia.org/wiki/Central_European_Time</a>** </p>
+<h3 id="fecha-de-ultimo-acceso">Fecha de último acceso</h3>
+<p>Por defecto Windows no actualiza la fecha de último acceso. Es una propiedad que se encuentra en el registro: </p>
+<p>Ruta: <strong>System\ControlSet001\Control \Filesystem</strong> </p>
+<ul>
+<li>Hay que verificar si está activado buscando NtfsDisableLastAccessUpdate = 0 </li>
+<li>Por defecto viene activada esta opción lo que impide saber cuándo se accedió (Win7-Win10) </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.041.png" />
+</center></p>
+<p>Comando para activarlo: <strong>fsutil behavior set disablelastaccess 0</strong> </p>
+<h3 id="interfaces-de-red">Interfaces de Red</h3>
+<p>¿Por qué es útil? </p>
+<ul>
+<li>Determinar los interfaces de red de la máquina </li>
+<li>Determinar si el sistema tuvo una IP Estática o por DHCP Obtener GUID del interface para hacer correlaciones </li>
+</ul>
+<p>Ruta: <strong>System\ControlSet001\Services\Tcpip\Parameters\Interfaces{GUID_INTERFACE}</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.042.jpeg" />
+</center></p>
+<p>Esta información aparece mucho mejor representada en el WRR: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.043.jpeg" />
+</center></p>
+<h3 id="historico-de-redes">Histórico de Redes</h3>
+<p>¿Qué podemos encontrar? </p>
+<ul>
+<li>Identificar redes a la que el equipo se conectó </li>
+<li>Identificar si las redes eran cableadas o inalámbricas </li>
+<li>Identificar el nombre dominio </li>
+<li>Identificar el SSID </li>
+<li>Identificar la MAC Address del gateway </li>
+</ul>
+<p>Ruta: </p>
+<ul>
+<li><strong>Software\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Unmanaged</strong> </li>
+<li><strong>Software\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Managed</strong> </li>
+<li><strong>Software\Microsoft\Windows NT\CurrentVersion\NetworkList\Nla\Cache</strong> </li>
+</ul>
+<p>¿Por qué es útil? </p>
+<ul>
+<li>Primera y última vez que se produjo la conexión a la red </li>
+<li>Listar conexiones que han sido conectadas a través de VPN </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.044.png" />
+</center></p>
+<h3 id="cuando-se-conecto-a-una-red">Cuando se conectó a una Red</h3>
+<p>Propósito: </p>
+<ul>
+<li>Identificar el tipo de red a la que se conectó </li>
+<li>Identificar el SSID de la red inalámbrica </li>
+<li>El timestamp de este artefacto está en local time. </li>
+</ul>
+<p>Ruta: </p>
+<ul>
+<li><strong>Software\Microsoft\WZCSVC\Parameters\Interfaces{GUID} -&gt; XP</strong> </li>
+<li><strong>Software\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles -&gt; Win7-Win10</strong> </li>
+</ul>
+<p>Si la maquina es Win7-Win10 el tipo de red (NameType) viene definido de la siguiente manera: </p>
+<ul>
+<li>0x47 -&gt; Wireless </li>
+<li>0x06 -&gt; Cableada </li>
+<li>0x17 -&gt; 3G </li>
+</ul>
+<p>Categoría: </p>
+<ul>
+<li>Public -&gt; 0 </li>
+<li>Private / Home -&gt; 1 </li>
+<li>Domain /Work 2 </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.045.png" />
+</center></p>
+<p>Podemos identificar también DateCreated y DateLastConnected. Usando Windows 128 bit time y está almacenado en local time. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.046.png" />
+</center></p>
+<p>Con el ProfileGUID {54ADAF4F-0492-458F-96EA-652ED5ABD35C} podemos mapear información histórica. </p>
+<h3 id="carpetas-compartidas">Carpetas Compartidas</h3>
+<p>¿Qué podemos identificar? </p>
+<ul>
+<li>Carpetas compartidas a nivel local </li>
+<li>Configuración de dichas carpetas compartidas </li>
+</ul>
+<p>Ruta: *<em>System\ControlSet001\Services\lanmanserver\Shares*</em> Flags: </p>
+<ul>
+<li>CSCFlags: Caching Setting </li>
+<li>MaxUses: Usuarios máximos </li>
+<li>Permissions: Permisos de la carpeta </li>
+<li>Remark: Comentarios del usuario añadidos </li>
+<li>Type: Tipo de compartición </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.047.png" />
+</center></p>
+<p><strong>Client Side Caching</strong> </p>
+<p>Esta opción aparece dentro del CSCFLAGS: Si se comparte la carpeta con el Client Side Caching, si el cliente está desconectado de la red, dispondrá de una copia del fichero en su sistema. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.048.png" />
+</center></p>
+<p>La copia de estos ficheros se guardan tanto en el cliente como en el servidor en la ruta C:\Windows\CSC: </p>
+<ul>
+<li>CSCFlag=0 -&gt; Opción por defecto, donde el usuario debe indicar que ficheros quiere cachear </li>
+<li>CSCFlag=16 -&gt; Cacheo de documentos automáticos. “All files and programs that users open from the shared folder are automatically available offline” with the “optimize for perforance. </li>
+<li>CSCFlag=32 Igual que la opción anterior pero con la opción de “Optimizado para rendimiento” </li>
+<li>CSCFlag=48 Caché deshabilitada. </li>
+<li>CSCFlag=2048: Opción por defecto en Win7-Win10 hasta que el usuario deshabilita “Simple File Sharing” o utiliza las opciones avanzadas de compartición. Por defecto también el “Homegroup” </li>
+</ul>
+<p><strong>Maxuses</strong>: número total de conexiones a una compartición simple. Es un dato para limitar las conexiones. Por defecto 4294967295 para 32 bits. </p>
+<p><strong>Path</strong>: directorio local. </p>
+<p><strong>Permissions</strong>: aparentemente, este valor puede ayudar a determinar cómo se compartió una carpeta. 0 es para cuando el valor ha sido creado mediante GUI o Powershell. </p>
+<ul>
+<li>Para Windows 7-Windows10, el valor es 9 si fue creado con el advanced file sharing y 63 si fue mediante línea de comandos. </li>
+</ul>
+<p>Type: tipo de dispositivo o recurso accedido </p>
+<ul>
+<li>0 = Disk Drive/ Folder </li>
+<li>1 = Impresora </li>
+<li>3 = IPC </li>
+<li>2147483 = Admin (Disk,Printer, Device o IPC) </li>
+</ul>
+<h3 id="autostart-programs">AutoStart Programs</h3>
+<p>¿Qué obtenemos? </p>
+<ul>
+<li>Determinar qué programas se ejecutan automáticamente </li>
+<li>Útil para localizar malware </li>
+<li>Determinar la última fecha de cuándo se actualizó (generalmente último arranque del sistema) </li>
+</ul>
+<p>Ruta: </p>
+<ul>
+<li><strong>NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Run</strong> </li>
+<li><strong>NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\RunOnce</strong> </li>
+<li><strong>Software\Microsoft\Windows\CurrentVersion\Runonce</strong> </li>
+<li><strong>Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run</strong> </li>
+<li><strong>Software\Microsoft\Windows\CurrentVersion\Run</strong> </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.049.png" />
+</center></p>
+<h3 id="informacion-de-apagado">Información de Apagado</h3>
+<p>Ruta: </p>
+<ul>
+<li>System\ControlSet001\Control\Windows (Hora de apagado) </li>
+<li>System\ControlSet001\Control\Watchdog\Display (Shutdown count) – solo XP </li>
+</ul>
+<p>Las fechas están en HEX en formato Windows 64 Little Endian </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.050.png" />
+</center></p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.051.png" />
+</center></p>
+<h3 id="busqueda-en-win7">Búsqueda en Win7</h3>
+<p>Ruta: <strong>NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\WordwheelQuery</strong> </p>
+<p>Aunque Windows vista no tiene almacenados los valores de búsqueda en el registro, Windows 7/8/10 sí. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.052.png" />
+</center></p>
+<h3 id="busqueda-en-win-8-10">Búsqueda en Win 8 /10</h3>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.053.jpeg" />
+</center></p>
+<p>Ruta: <strong>NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery</strong> </p>
+<ul>
+<li>Como Windows 8/10 pierde el botón de Inicio, las búsquedas quedan limitadas a la barra de búsqueda del Explorer. </li>
+<li>Las búsquedas son almacenadas en orden temporal. </li>
+<li>MRU = 0 es la última búsqueda </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.054.png" />
+</center></p>
+<h3 id="typed-paths-windows-10">Typed Paths Windows 10</h3>
+<p>Muestra como se ha escrito una ruta en el menú de inicio o en la barra del Explorer. Es útil para demostrar que el usuario conocía con antelación la ruta exacta. </p>
+<p>Ruta: <strong>NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.055.png" />
+</center></p>
+<h3 id="recent-docs">Recent Docs</h3>
+<p>Documentos recientes que han sido abiertos por el usuario desde Windows XP a </p>
+<p>Win10. </p>
+<p>Ruta: NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.056.jpeg" />
+</center></p>
+<p>MRU = 0 sería el más actual </p>
+<h3 id="office-recent-docs">Office Recent Docs</h3>
+<p>Este artefacto forense muestra los documentos ofimáticos recientes, abiertos por el usuario: Ruta: <strong>NTUSER.DAT\Software\Microsoft\Office{Version}{Excel|Word}\FileMRU</strong> </p>
+<ul>
+<li>14.0 Office 2010 </li>
+<li>12.0 Office 2007 </li>
+</ul>
+<p><strong>NTUSER.DAT\Software\Microsoft\Office{Version}{Excel|Word}\ UserMRU\LiveID_###\FileMRU</strong> -&gt; Office 365 </p>
+<ul>
+<li>15.0 office 2013 </li>
+<li>16.0 Office 2016 </li>
+</ul>
+<p>La clave FileMRU tendrá una lista de los ficheros más recientes de office ordenados del 1-50. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.057.png" />
+</center></p>
+<p>Dentro de este artefacto lo interesante es que viene la ruta completa si es comparada con el directorio “Recent Docs” que veremos más adelante. </p>
+<p>En la misma localización dentro de los Office 365 aparece una key llamada PlaceMRU, el cual muestra la localización del path previamente abierto en ese directorio. </p>
+<p>Los 8 bytes que hay a continuación de la letra T es un timestamp en formato Windows 64 Big Endian. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.058.png" />
+</center></p>
+<h3 id="auroguardado-de-ficheros-office">Auroguardado de Ficheros Office</h3>
+<p>Los ficheros de autoguardado están en la carpeta: </p>
+<p>Ruta: *<em>C:\Usuarios\<usuario>\AppData\Roaming\Microsoft{Excel|Word|Powerpoint}*</em> </p>
+<ul>
+<li>Ficheros con extensión .asd </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.059.jpeg" />
+</center></p>
+<p>El fichero se renombra y ya podría ser abierto. </p>
+<h2 id="eventos-de-windows">Eventos de Windows</h2>
+<p>Los eventos de Windows son registros detallados de actividades y operaciones del sistema, proporcionando información valiosa sobre el comportamiento del sistema, seguridad, y actividades de los usuarios. Son fundamentales para la detección de problemas y análisis forense.</p>
+<p>Los eventos son recolectados y almacenados por el Servicio de Registro de Eventos.</p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.132.jpeg" />
+</center></p>
+<h3 id="tipos-de-eventos">Tipos de Eventos</h3>
+<ul>
+<li>
+<p><strong>Eventos de Aplicaciones</strong>: Registra actividades relacionadas con aplicaciones instaladas, como errores de ejecución y conflictos.</p>
+</li>
+<li>
+<p><strong>Eventos de Seguridad</strong>: Contiene registros de acceso, cambios de permisos, y acciones relacionadas con la seguridad del sistema.</p>
+</li>
+<li>
+<p><strong>Eventos del Sistema</strong>: Incluye información sobre operaciones del sistema operativo, como arranques y apagados del sistema, y errores del sistema.</p>
+</li>
+</ul>
+<h3 id="ubicacion-de-los-archivos-de-eventos">Ubicación de los Archivos de Eventos</h3>
+<p>Los podemos encontrar en las siguientes rutas. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.133.png" />
+</center></p>
+<p>Nos podemos encontrar dos tipos de eventos: </p>
+<ul>
+<li>
+<p>Event log en formato Binario (antes de Windows Vista)</p>
+<ul>
+<li>Sistema </li>
+<li>Aplicación </li>
+<li>Seguridad </li>
+<li>Extensión en (.evt) </li>
+</ul>
+</li>
+<li>
+<p>Event log en formato XML (de Windows Vista en adelante) </p>
+<ul>
+<li>Sistema </li>
+<li>Aplicación </li>
+<li>Seguridad </li>
+<li>Extension (.evtx) </li>
+<li>200 tipos de ficheros más que el formato antiguo </li>
+<li>Ahora incluyen direcciones IP </li>
+</ul>
+</li>
+</ul>
+<p>Las localizaciones de los ficheros de eventos las podemos localizar en el registro SYSTEM en la siguiente ruta: </p>
+<p><strong>HKLM\SYSTEM\CurrentControlSet\Services\EventLog{Application|System|Security}</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.134.jpeg" />
+</center></p>
+<p>Existen también otros tipos de eventos que no son del sistema operativo Windows, como aplicaciones de terceros, Exchange, Sysmon, SQL Server. </p>
+<h3 id="que-podemos-obtener-de-los-eventos-de-windows"><strong>¿Qué podemos obtener de los eventos de Windows?</strong></h3>
+<ul>
+<li>¿Qué ocurrió? (Identificador del Evento, Categorías del Evento, Descripción) </li>
+</ul>
+<p>Los registros de eventos están diseñados para proporcionar información muy específica sobre las actividades ocurridas en el sistema. </p>
+<ul>
+<li>¿Cuál fue el día y la hora? (Marcas de Tiempo) </li>
+</ul>
+<p>Las marcas de tiempo son una parte clave de los registros de eventos, pues proporcionan un contexto temporal. Con sistemas registrando miles de eventos, las marcas de tiempo pueden también ayudar al investigador a acercar su enfoque. </p>
+<ul>
+<li>¿Quiénes son los usuarios involucrados? (Cuenta de Usuario, Descripción) </li>
+</ul>
+<p>Cualquier cosa hecha dentro de Windows es realizada dentro del contexto de una cuenta. Se puede identificar referencias hacia usuarios específicos, como también información sobre las actividades del sistema operativo Windows realizadas mediante una cuenta especial como System o NetworkService. </p>
+<ul>
+<li>¿Cuáles son los sistemas involucrados? (Nombre del Host, Dirección IP) </li>
+</ul>
+<p>En un entorno de red, es muy común encontrar referencias hacia otros sistemas aparte del host, como recursos siendo accedidos remotamente. Originalmente sólo el nombre Netbios era registrado, haciendo el rastreo y la atribución mucho más difícil. En sistemas más recientes, la dirección IP es registrada dentro del registro de eventos (Cuando aplica). </p>
+<ul>
+<li>¿Cuáles recursos se accedieron? (Archivos, Carpetas, Impresoras, Servicios) </li>
+</ul>
+<p>El Servicio de Registro de Eventos puede ser configurado para almacenar información muy granular relacionada a la utilización de varios objetos del sistema. Con casi todos los recursos considerados como un objeto, esto proporciona una muy poderosa auditoría. Como un ejemplo; puede ayudar a identificar intentos de acceso no autorizado hacia los archivos del sistema. </p>
+<h3 id="eventos-de-seguridad">Eventos de Seguridad</h3>
+<p>Los eventos de seguridad son solo actualizados por el proceso LSASS (Local Security Authority Subsystem Service). Se encuentran en <strong>C:\Windows\System32\winevt\Security.evtx</strong> </p>
+<p><strong>Solo con permisos de administrador se pueden ver, exportar o eliminar.</strong> Tienen un tamaño máximo, pero es configurable como vemos a continuación: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.135.png" />
+</center></p>
+<p>Normalmente, el escenario es que veremos, es que, una vez alcanzado el tamaño asignado, se sobrescribirá los eventos más viejos, es decir un fichero circular. </p>
+<p><strong>¿Qué podemos identificar en los eventos de seguridad?</strong> </p>
+<ul>
+<li>Login logoff </li>
+<li>Conducta y acciones del usuario </li>
+<li>Acceso a Archivos, Directorios y recursos compartidos </li>
+<li>Modificaciones de la configuración de seguridad </li>
+</ul>
+<p>Los eventos están identificados por ID, y en función de ese identificador podremos identificar que ha ocurrido. En la siguiente web podemos encontrar una descripción exhaustiva de todos los identificadores:<a href="https://www.ultimatewindowssecurity.com/"> https://www.ultimatewindowssecurity.com</a> </p>
+<h3 id="eventos-relacionados-con-la-autenticacion-del-usuario">Eventos relacionados con la autenticación del usuario</h3>
+<p>Eventos de relacionados con la autenticación del usuario del sistema Windows: </p>
+<table>
+<thead>
+<tr>
+<th><strong>EventID</strong></th>
+<th><strong>Descripción</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>4624</strong></td>
+<td>Evento de autenticación satisfactorio</td>
+</tr>
+<tr>
+<td><strong>4625</strong></td>
+<td>Evento de fallido de autenticación</td>
+</tr>
+<tr>
+<td><strong>4634/4647</strong></td>
+<td>Log off</td>
+</tr>
+<tr>
+<td><strong>4672</strong></td>
+<td>Logon con permisos de administrador</td>
+</tr>
+<tr>
+<td><strong>Ejemplo de evento 4625</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.136.png" />
+</center></p>
+<p><strong>Ejemplo de evento 4634 Log OFF</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.137.png" />
+</center></p>
+<p><strong>Ejemplo de evento 4672 logon especial</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.138.png" />
+</center></p>
+<p><strong>Dentro del Evento 4624/4625 encontramos los siguientes subtipos:</strong></p>
+<ul>
+<li>2 -&gt; Interactive: este tipo de autenticación involucra la utilización del teclado y pantalla del sistema, o la utilización de terceras herramientas remotas como VNC o PSexec -U- </li>
+<li>3 -&gt; Network: conexión a una carpeta compartida del propio equipo . </li>
+<li>4 -&gt; Batch: también válido para las tareas programadas, donde los procesos son ejecutados en nombre de otro. </li>
+<li>5 -&gt; Service: servicios arrancados por el Service Control Manager </li>
+<li>7 -&gt; Desbloqueo de pantalla con password </li>
+<li>8 -&gt; Network Cleartext: el usuario se ha autenticado en la máquina desde la red pero sus credenciales no han sido hasheadas. Este tipo de evento suele provenir de la autenticación realizada mediante Internet Information Services (IIS), servidor Web de Microsoft. </li>
+<li>9 -&gt; NewCredentials: es generado cuando se ejecuta un comando con RunAs desde la CMD o se conecta con una unidad de red, con credenciales distintas a las de la propia sesion. </li>
+<li>10 -&gt; Remote Interactive: este tipo de autenticación se produce cuando una autenticación se realiza mediante Terminales Services o Remote Desktop Protocol. </li>
+<li>11 -&gt; CachedInteractive: se autentica con las credenciales últimas cacheadas ya que no ha sido posible contactar con el controlador de dominio. </li>
+</ul>
+<p>Ejemplo de evento 4624 tipo 2: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.139.jpeg" />
+</center></p>
+<p>Dentro del evento 4625 se puede indicar el tipo de error al autenticarse mediante los estados y subestados: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.140.jpeg" />
+</center></p>
+<p><strong>Ejemplo de evento 4625 con subestados:</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.141.jpeg" />
+</center></p>
+<h3 id="herramientas-para-analisis">Herramientas para Análisis</h3>
+<p>Los eventos del sistema los podemos visualizar desde la propia gestión de eventos o Event Viewer de Windows (eventvwr.msc) o podemos utilizar una herramienta que nos permita trabajar tanto de manera live como de manera post-mortem. </p>
+<p><strong><a href="https://www.nirsoft.net/utils/windows_log_on_times_view.html">WinLogOnView</a></strong> - Herramienta para mostrar informes de inicios/cierres de sesión en Windows, incluyendo detalles como hora, usuario y duración.Útil para rastrear accesos inusuales o sospechosos al sistema.</p>
+<p><strong><a href="https://eventlogxp.com/">EventLogExplorer</a></strong> - Herramienta avanzada para visualizar, analizar y monitorear eventos en los registros de Windows, con interfaz intuitiva y opciones de filtrado. Permite buscar eventos específicos y patrones de comportamiento en grandes volúmenes de datos de registro.</p>
+<p>**<a href="https://www.nirsoft.net/utils/full_event_log_view.html">FullEventLogView</a>
+** - Permite ver y exportar los detalles de todos los eventos en los registros de Windows. Ligera y no requiere instalación. Ideal para extracciones rápidas y revisiones generales de los registros de eventos.</p>
+<p>La herramienta que nos va permitir realizar carving de este tipo de ficheros es <strong>Bulk_extractor</strong>, bastaría con proporcionarle una imagen física o lógica y marcar el escáner como se muestra en la imagen de a continuación: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.143.jpeg" />
+</center></p>
+<p>Esta herramienta la veremos en la parte de carving.</p>
+<h3 id="analisis-de-casuisticas-mas-comunes-en-cuanto-a-seguridad">Análisis de casuísticas más comunes en cuanto a seguridad.</h3>
+<p>Algunas situaciones que podremos identificar mediante eventos del sistema. </p>
+<p><strong>1. BruteForce Attack</strong> </p>
+<p>Un ataque de fuerza bruta se podrá realizar mediante el intento de autenticación del usuario hasta que consiga acceso al sistema. Veremos muchos eventos 4625 y a continuación un 4624 </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.144.jpeg" />
+</center></p>
+<p><strong>2. Remote Desktop Protocol</strong> </p>
+<p>El remote Desktop Protocol, es el protocol de Windows para poder conectarse a otra máquina, mediante credenciales, es decir, un escritorio remoto. </p>
+<p>En el Security Event Log: </p>
+<ul>
+<li>Sesión conectada: Event ID 4778 (incluye dirección IP y Hostname) </li>
+<li>Sesión desconectada: Event ID 4779 (incluye dirección IP y Hostname) </li>
+<li>Autenticación Satisfactoria Event ID 4624 Tipo ( 10 y 7 para reconexión) </li>
+</ul>
+<p>Logs auxiliares: </p>
+<ul>
+<li>Remote Desktop Services – RDPCoreTS (Event ID 131) </li>
+<li>TerminalServices-RemoteConnectionManager%40Operational) (Event ID 1149) </li>
+<li>Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx (Event ID 21 y 22) </li>
+</ul>
+<p><strong>Conexión Satisfactoria</strong></p>
+<p>Conexión satisfactoria mediante escritorio remoto </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.145.jpeg" />
+</center></p>
+<p>Ejemplo de evento 1149 con IP Origen: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.146.jpeg" />
+</center></p>
+<p>Ejemplo de evento 4624 tipo 7: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.147.jpeg" />
+</center></p>
+<p>Ejemplo de evento 21 con IP Origen: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.148.jpeg" />
+</center></p>
+<p>Ejemplo de evento 22 con IP Origen: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.149.jpeg" />
+</center></p>
+<p><strong>Conexión no satisfactoria</strong> </p>
+<p>La autenticación no satisfactoria mediante RDP </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.150.jpeg" />
+</center></p>
+<p>Evento 4625 tipo 2: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.151.jpeg" />
+</center></p>
+<p>Conexión LogOFF </p>
+<p>Desconexión de la consola de escritorio remoto mediante log off solicitado por el usuario. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.152.jpeg" />
+</center></p>
+<p>Reconexión </p>
+<p>Conexión de nuevo con la consola de escritorio remoto </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.153.jpeg" />
+</center></p>
+<p>Sesión desconectada </p>
+<p>Sesión desconectada, cerrando la ventana de escritorio remoto </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.154.jpeg" />
+</center></p>
+<p><strong>3. Cambio de Hora</strong> </p>
+<p>El cambio de hora de un sistema, es una de las peores situaciones que se puede dar para un investigador ya que todos los timestamps quedan modificados: </p>
+<p>Al hacer un cambio de hora se produce el Evento 4616 dentro de Security.evtx </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.155.png" />
+</center></p>
+<p><strong>4. Dispositivos USB</strong> </p>
+<p>A parte de todos los artefactos que hemos visto anteriormente para la identificación de USBs, también podemos utilizar los <strong>eventos de System</strong>: </p>
+<ul>
+<li>20001 /20003 contiene cuando se insertó por primera vez. </li>
+<li>10000 contiene cuando se insertó por primera vez </li>
+<li>10100 contiene el log de cuando se actualizó el driver. </li>
+</ul>
+<p><strong>Ejemplo de evento 20001</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.156.jpeg" />
+</center></p>
+<p>También se puede localizar el número de serie en la anterior captura junto con la marca y modelo, en el evento 20003 </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.157.jpeg" />
+</center></p>
+<p><strong>Eventos de Microsoft-Windows-DeviceSetupManager%4Admin.evtx</strong> </p>
+<ul>
+<li>Event ID 112: contiene el timestamp de cada dispositivo USB insertado en el sistema. Para correlar, es necesario conocer el ContainderID del USBSTOR key del registro que vimos previamente. </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.158.jpeg" />
+</center></p>
+<p>El Container ID concuerda con lo que se vio en la parte de Registro: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.159.png" />
+</center></p>
+<p><strong>5. Apagado/arranque del Sistema</strong> </p>
+<p>Identificación del arranque del Sistema mediante el arranque del servicio “Event Log” en el evento 6005 </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.160.png" />
+</center></p>
+<p>Identificación del apagado del sistema mediante la parada del servicio “Event Log” mediante el evento 6006 </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.161.png" />
+</center></p>
+<p>Identificación de un apagado inesperado mediante el evento 6008: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.162.png" />
+</center></p>
+<p>Identificación del tiempo que lleva encendido del sistema: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.163.png" />
+</center></p>
+<p>Apagado del servicio “Event Log” mediante el evento id 1100 en Security </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.164.png" />
+</center></p>
+<p><strong>6. Vaciado de Logs</strong> </p>
+<p>Vaciado del fichero Security.evtx, identificado mediante el evento id 1102 </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.165.png" />
+</center></p>
+<p>Para más información de eventos de Windows se puede utilizar la siguiente página:<a href="https://www.ultimatewindowssecurity.com/"> https://www.ultimatewindowssecurity.com</a> </p>
+<h2 id="dispositivos-usb">Dispositivos USB</h2>
+<p>Los dispositivos de almacenamiento USB son muchas veces objetos de investigación, debido a que son utilizados para copiar ficheros/carpetas. ¿Qué información podemos obtener siempre de un dispositivo USB? </p>
+<ul>
+<li>Vendor/Make/Versión </li>
+<li>Número de serie único </li>
+</ul>
+<p>¿Qué información podemos obtener relacionada con un dispositivo de almacenamiento USB? </p>
+<ul>
+<li>Determinar la unidad asignada y el nombre del volumen </li>
+<li>Encontrar el usuario que utilizó ese dispositivo USB </li>
+<li>Descubrir la primera vez que el dispositivo USB fue conectado </li>
+<li>Determinar la última vez que el dispositivo USB fue conectado </li>
+<li>Determinar cuando el dispositivo fue quitado del sistema </li>
+</ul>
+<p>¿Cuáles son los artefactos forenses que podemos utilizar para identificar la copia de un fichero a un dispositivo de almacenamiento USB? </p>
+<ol>
+<li>Windows Registry Hives: </li>
+<li>System </li>
+<li>Software </li>
+<li>Ntuser.dat </li>
+<li>Setupapi.dev.log </li>
+<li>Shell Items </li>
+<li>Jumplists </li>
+<li>LNK Files </li>
+<li>ShellBags </li>
+</ol>
+<h3 id="mass-storage-device">Mass Storage Device</h3>
+<p>También conocidos como dispositivos de almacenamiento (USB Mass Storage). En Windows son montados automáticamente siempre que el sistema de archivos sea compatible con Windows. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.078.png" />
+</center></p>
+<h3 id="picture-transfer-protocol">Picture Transfer Protocol</h3>
+<p>Desarrollado por el International Imaging Industry Association. Un dispositivo PTP en </p>
+<p>Windows: </p>
+<ul>
+<li>No tiene acceso al sistema de archivos </li>
+<li>Solo tiene acceso a imágenes y archivos de video </li>
+<li>Dispone Exploración limitada y lógica del contenido </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.079.png" />
+</center></p>
+<h3 id="media-transfer-protocol">Media Transfer Protocol</h3>
+<p>¿Qué características tiene el MTP? </p>
+<ul>
+<li>Mejora y extensión del PTP. </li>
+<li>No tiene acceso al sistema de archivos. </li>
+<li>Acceso a la tarjeta interna y SD. </li>
+<li>Dentro de Windows es montado como un dispositivo portable </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.080.png" />
+</center></p>
+<h3 id="identificar-evidencias-de-uso-dispositivos-usb">Identificar evidencias de uso dispositivos USB</h3>
+<p><strong>MSC USB</strong> </p>
+<p>Creación de ficheros LNK para todos los ficheros que hayan sido abiertos </p>
+<ul>
+<li>Windows Recent Folder </li>
+<li>Microsoft Office Recent Folder </li>
+<li>Jumplist: Automatic Destinations </li>
+</ul>
+<p><strong>MTP USB</strong> </p>
+<p><strong>Windows puede o no puede crear ficheros LNK. Depende de la aplicación y del tipo de archivo. Algunos MTP LNK no apuntan a la fuente MTP pero apunta al WPDNSE folder: C:\users\<username>\Appdata\Local\Temp\WPDNSE{GUID}</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.081.png" />
+</center></p>
+<p><strong>Los ficheros DOC no apuntan a la fuente original sino a un directorio temporal. Solo ocurre con los documentos office.</strong> </p>
+<ul>
+<li>Los ficheros JPG si dejan un LNK verdadero a la fuente original. </li>
+<li>Los ficheros PDF, TXT y XLS no producen ningún fichero LNK. </li>
+</ul>
+<p>¿Qué contiene el directorio temporal WPDNSE? </p>
+<ul>
+<li>Mantiene una copia del fichero </li>
+<li>El directorio es temporal y no sobrevive a un reinicio </li>
+<li>El GUID se saca de una Shellbag</li>
+</ul>
+<h3 id="usbstor">USBStor</h3>
+<p>El registro USBstor, se encarga de monitorizar cualquier dispositivo USB que haya sido conectado a la máquina: </p>
+<p>Ruta: <strong>SYSTEM\ControlSet001\Enum\USBSTOR</strong> </p>
+<p>¿Por qué es útil? </p>
+<ul>
+<li>Se puede identificar al fabricante, el producto y la versión de un dispositivo MSC que está conectado a la máquina. </li>
+<li>Identificar un único dispositivo USB que ha sido conectado a la máquina. </li>
+<li>Determinar el tiempo por el cual el dispositivo estaba conectado a la máquina </li>
+<li>Identificar el número de serie físico del dispositivo USB. </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.082.png" />
+</center></p>
+<p>En rojo el número de serie del dispositivo. En azul el Device Class ID. </p>
+<h3 id="identificacion-de-vidpid">Identificación de VID/PID</h3>
+<p>Para localizar estos valores debemos de recurrir a <strong>SYSTEM\ ControlSet001\Enum\USB:</strong> </p>
+<ul>
+<li>VID: Vendor ID </li>
+<li>PID: Product ID </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.083.png" />
+</center></p>
+<p>VID:0930 y PID:6544 </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.084.png" />
+</center></p>
+<h3 id="obtener-el-nombre-del-volumen">Obtener el nombre del volumen</h3>
+<p>Ruta: SOFTWARE\Microsoft\Windows Portable Devices\Devices Aplica para MSC, </p>
+<p>MTP y PTP. </p>
+<ul>
+<li>Se relaciona el dispositivo USB Físico, que dispone de un número de serie con un nombre de Volumen. </li>
+<li>El nombre del volumen puede ser mapeado a una unidad mediante los ficheros LNK </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.085.png" />
+</center></p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.086.png" />
+</center></p>
+<p>Para las capturas de imagen anteriores, el nombre del volumen es DATA. </p>
+<h3 id="obtener-la-ultima-unidad-asignada">Obtener la última unidad asignada</h3>
+<p>Solo MSC que sean <strong>discos de almacenamiento externos</strong> aplica la siguiente casuística para la ruta del registro: <strong>System\MoutedDevices.</strong> </p>
+<p>Los dispositivos particionados con MBR dejan una firma de 4 bytes, en el registro, la clave MoutedDevices. Para el particionado en GPT deja el GUID del tipo de partición. 89 </p>
+<p><strong>La firma del MBR se encuentra el primer sector en el offset 0X1B8 o 440 del disco</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.087.png" />
+</center></p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.088.jpeg" />
+</center></p>
+<p>También podemos obtener la última unidad asignada analizando la clave de registro <strong>System\MoutedDevices</strong>: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.089.jpeg" />
+</center></p>
+<h3 id="localizar-el-usuario-que-ha-utilizado-el-usb">Localizar el usuario que ha utilizado el USB</h3>
+<ol>
+<li>El primer paso es localizar el GUID del Volumen en <strong>SYSTEM\mountedDevices</strong>. Localizando el número de serie dentro del mismo. </li>
+</ol>
+<p>\??\Volume{<strong>2e1ce865-c747-11e8-add4-34238779763e</strong>} </p>
+<ol>
+<li>Y luego este GUID asociarlo al NTUSER.DAT del usuario: <strong>NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\Mountpoin</strong> </li>
+</ol>
+<p><strong>ts2</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.090.png" />
+</center></p>
+<p>Ha sido encontrado dentro del NTUSER.DAT del usuario ismis. </p>
+<h3 id="volume-serial-number">Volume Serial Number</h3>
+<p>El volumen serial number, es el número de serie del volumen lógico del sistema de archivos: </p>
+<ul>
+<li>No confundir con el número de serie físico del dispositivo. </li>
+<li>Solo dispositivos MSC </li>
+</ul>
+<p>Ruta: <strong>Software\Microsoft\Windows NT\CurrentVersion\EMDMgmt</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.091.png" />
+</center></p>
+<p><strong>¿Por qué es útil?</strong> </p>
+<p>Sabiendo el nombre del volumen y el serial number del volumen pueden correlacionar la información con los ficheros LNK y la clave de registro RecentDocs </p>
+<p><strong>Este artefacto dependerá de si el servicio ReadyBoost está habilitado o no.</strong> ¿Qué información hay en EMDMgmt Key? </p>
+<ul>
+<li>Fabricante, ID y Serial number </li>
+<li>Volume Name del sistema de archivos, muy útil para relacionar con los LNK. </li>
+</ul>
+<p>¿Qué pasaría si el dispositivo USB es reformateado? Un formateo solo escribe los datos necesarios para tener de nuevo un sistema de archivos “limpio”. No realiza ningún borrado. </p>
+<ul>
+<li>Tendríamos un nombre de volumen nuevo </li>
+<li>Tendríamos un nuevo volumen serial number </li>
+<li>Pero se mantiene el serial number físico del dispositivo. </li>
+</ul>
+<h3 id="timestamps">Timestamps</h3>
+<p>Primera y última vez que se conectó al dispositivo Ruta: </p>
+<p>*<em>System\ControlSet001\Enum\USBSTOR{VEN_PROD_VERSION}{USB serial}\Properties{83da6326-97ª6-4088-9453-a1923f573b29}*</em> </p>
+<ul>
+<li>Win7 y Win8 -&gt; <strong>Primera conexión</strong> -&gt; 0064 </li>
+<li>Win8 en adelante -&gt; <strong>Ultima conexión</strong> -&gt; 0066 </li>
+<li>Win8 en adelante -&gt; <strong>Fecha de desconexión con independencia de si es quitado con seguridad o sin ella.</strong> -&gt; 0067 </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.092.png" />
+</center></p>
+<p>Timestamps 64 bits Hex Windows Time Little Endian pero Registry Explorer los interpreta: </p>
+<ul>
+<li>0064: 10/3/2018 8:06:48 PM +00:00 </li>
+<li>0066: 10/3/2018 8:24:46 PM +00:00 </li>
+<li>0067: 10/3/2015 9:17:12 PM +00:00 </li>
+</ul>
+<p>También podemos analizar el fichero <strong>SetupApi.dev.log</strong> para obtener timestamps de cuando se produjo la conexión USB: </p>
+<p>Ruta: </p>
+<ul>
+<li><strong>XP -&gt; C:\Windows\setupapi.log</strong> </li>
+<li><strong>Win7-Win10 -&gt; C:\Windows\inf\setupapi.dev.log</strong> </li>
+</ul>
+<p><strong>Los timestamps están local time.</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.093.jpeg" />
+</center></p>
+<p>También podemos utilizar los eventos del sistema para localizar los timestamps, a partir de Windows 7 / 8 / 10. Lo veremos más adelante. </p>
+<p>Herramientas para realizar todos estos pasos de manera automática: <strong><a href="https://usbdetective.com/">USB Detective</a></strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.094.jpeg" />
+</center></p>
+<p><strong>** Ver Video:14-USB Detective</strong> </p>
+<p>Los datos concuerdan con lo que hemos analizado anteriormente. Incluso el VSN o volumen serial number no ha sido capaz de encontrarlo como nosotros.</p>
+<h2 id="identificacion-y-analisis-de-artefactos-forenses-propios-del-sistema-de-archivos">Identificación y análisis de artefactos forenses propios del sistema de archivos</h2>
+<h3 id="index-records">$INDEX Records</h3>
+<p>NTFS indexa la información de cada directorio en un B+ Tree: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.004.jpeg" />
+</center></p>
+<p>FTK analiza el sistema de archivos y lo representa como un fichero más ($I30), según vemos en la imagen superior. </p>
+<p>Este atributo contiene información sobre los nombres de archivo y directorios que hay almacenados y que hubo dentro de él. Este atributo es también conocido como $INDX y contiene: </p>
+<ul>
+<li>$INDEX_ROOT = 0x90 </li>
+<li>$INDEX_ALLOCATION = 0xA0 </li>
+<li>$BITMAP = 0XB0 </li>
+</ul>
+<p>Cuando borras un fichero de un directorio, el atributo $I30 queda de manera de slack space y se puede encontrar evidencias de que existió. Es decir, dentro del propio fichero $I30 tenemos slack space. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.005.png" />
+</center></p>
+<p>En la captura se identifica el fichero Uforia.pdf como $I30 INDX Entry. Es decir, esta entrada está dentro del $I30. ¿Qué herramienta podemos utilizar para analizar el fichero $I30? </p>
+<p>IndexCSV </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.006.png" />
+</center></p>
+<p>Muy importante marcar la opción de Slack para que pueda obtener dentro del slack space del fichero I30 los registros que hubo. </p>
+<p><strong>** Ver video: 01 - Análisis de INDX</strong> </p>
+<p>¿Qué podemos obtener una vez hayamos analizado el fichero $I30? </p>
+<ul>
+<li>Fecha de Creación del Fichero que hay en la carpeta </li>
+<li>Fecha de modificación del fichero que hay en la carpeta </li>
+<li>Fecha de acceso del fichero que hay en la carpeta </li>
+<li>Fecha de cambio de registro MFT que hay en la carpeta </li>
+<li>Tamaño físico, lógico. </li>
+<li>Registro MFT </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.007.png" />
+</center></p>
+<p>Nunca obtendremos la fecha del fichero borrado que hubo en la carpeta. </p>
+<h3 id="shadow-copies">Shadow Copies</h3>
+<p>Las shadow copies también conocidas como el Servicio Volume Snapshot o Volume Shadow Copy (VSS), es una tecnología que se incluyó en los sistemas operativos a partir de Windows 7. Es un servicio de Backup automático y transparente para el usuario que esté utilizando el sistema. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.008.jpeg" />
+</center></p>
+<p><strong>Físicamente las shadows copies se encuentran en la carpeta raíz: System Volume Information</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.009.png" />
+</center></p>
+<p>En un equipo encendido o Live, es fácil acceder a dichas shadows copies: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.010.png" />
+</center></p>
+<p>¿cómo podríamos acceder a las shadows copies de una imagen forense? 
+<strong>**Ver Video: 02-Analisis de Shadows</strong></p>
+<p>Junto con <strong>Arsenal Image Mounter</strong> y la herramienta de <strong>Nirsoft ShadowCopy View</strong> podríamos extraer los ficheros que hay en cada snapshot. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.011.jpeg" />
+</center></p>
+<p><strong>Para analizar las Shadows Copies de un Windows 10, hay que lanzarlo desde un Windows 10. Así para todas las versiones de Windows.</strong> </p>
+<p>¿De qué ficheros se realiza backup mediante las shadows copies? </p>
+<p>Para ello habría que analizar el registro de Windows, en especial el fichero SYSTEM e ir a la siguiente ruta: </p>
+<ul>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VSS Y a esta ruta: </li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BackupRestore Dentro de esta última clave de registro, podremos encontrar: </li>
+<li>FilesNotToBackup -&gt; ficheros que no se deben copiar </li>
+<li>KeysNotToRestore  -&gt; claves de registro de Windows que no se deben de copiar. </li>
+</ul>
+<h3 id="carving">Carving</h3>
+<h4 id="que-ocurre-cuando-se-borra-un-fichero-mediante-el-sistema-operativo">¿Qué ocurre cuando se borra un fichero mediante el sistema operativo?</h4>
+<p>Cuando vacía la papelera en un Sistema Windows, se borra presionando la tecla “SHIFT” o se borra desde el CMD, es cuando de verdad se produce un borrado el fichero. A continuación identificamos todo el proceso a nivel forense: </p>
+<ol>
+<li>Se cambia el atributo flag, en la cabecera del registro MFT del fichero o carpeta que se ha borrado: </li>
+<li>Archivos: 0x01 to 0x00 </li>
+<li>Directorios: 0x03 to 0x02. </li>
+<li>El atributo $BITMAP del registro del MFT es procesado y establecido a 0 </li>
+<li>Los atributos no residentes del registro del MFT asociado al fichero en cuestión, son procesados y sus clúster son establecidos como espacio libre en el fichero $BITMAP. </li>
+</ol>
+<p><strong>¿Todo el proceso anterior impide que se pueda recuperar la información? No</strong>. Como ya hemos visto anteriormente se podrá recuperar siempre y cuando no se sobrescriba el registro MFT, debido al uso del sistema. </p>
+<p>Los ransomware cuando deshabilitan las Shadows copies, lo que hacen es utilizar una llamada al sistema para la lanzar el comando pertinente. Este comando es propio del sistema operativo </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.012.png" />
+</center></p>
+<p>Para recuperarlas veremos en la parte de carving otra herramienta. </p>
+<p><strong>¿Las herramientas de borrado seguro cómo funcionan? Estas herramientas pueden eliminar:</strong> </p>
+<ul>
+<li>El registro de MFT completo del fichero asociado </li>
+<li>Logfile </li>
+<li>Shadows copies </li>
+</ul>
+<p>A parte de realizar las operaciones anteriores, los clusters que son utilizados para contener el propio fichero, se sobrescriben a ceros o siguiendo un estándar de borrado que va en función del número de pasadas. </p>
+<h4 id="recuperacion-de-datos-mediante-el-propio-sistema-de-archivos">Recuperación de datos mediante el propio sistema de archivos</h4>
+<p>¿Cómo funcionan los programas de recuperación de ficheros que analizan el MFT? </p>
+<ol>
+<li>Buscan en el registro $MFT del fichero en cuestión. </li>
+<li>Analizan su atributo $DATA del registro. </li>
+<li>Sí el atributo $DATA es residente, el contenido como tal está en el propio registro. </li>
+<li>Sí el atributo $DATA es no residente, el contenido del fichero está en un clúster externo. A continuación, se parsea el RunList. (Runlist contiene los clusters asociados al fichero) </li>
+<li>Verificar si los clusters del Runlist están allocated o no. Si todos los clúster están allocated La recuperación de datos es posible. </li>
+<li>Si algunos clusters tienen de estado de allocated a 1, se puede realizar una recuperación de datos parcial. Los que están allocate cambian a 0. </li>
+<li>Si todos los clusters estuviesen a 1, significa que ya hay un fichero que utiliza todos los clúster </li>
+</ol>
+<p><strong>Este tipo de técnicas si permite recuperar el nombre del fichero, ya que se obtiene del atributo $FILE_NAME.</strong> </p>
+<p>Otras técnicas de recuperación de archivos utilizando artefactos del sistema de archivos, serían: </p>
+<ul>
+<li>Carving de registros MFT en el espacio libre </li>
+<li>Búsqueda de registros MFT en el propio registro $MFT, en el slack space. </li>
+</ul>
+<h4 id="recuperacion-de-datos-mediante-carving">Recuperación de datos mediante carving</h4>
+<p>La recuperación de datos mediante carving, se basa en ir analizando clúster a clúster del dispositivo de almacenamiento en busca de cabeceras o formas conocidas. Esta técnica NO permite recuperar el nombre del fichero. No depende del sistema de archivos, sino de conocer previamente como esta formado el fichero que queremos recuperar. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.013.jpeg" />
+</center></p>
+<p>Tres tipos de técnicas: </p>
+<ul>
+<li>Basadas en cabeceras y cierre del fichero: Header-Footer con tamaño máximo del fichero </li>
+<li>Basadas en cómo está el fichero construido : File structure based carving </li>
+<li>Content based Carving -&gt; basadas en el contenido en sí </li>
+</ul>
+<h4 id="tecnica-header-footer">Técnica Header - Footer</h4>
+<p>Se utiliza un header conocido y un footer: </p>
+<ul>
+<li>Fichero JPEG Header: OxFF,OxD8 -&gt; FFD8 </li>
+<li>Fichero JPEG Footer: OxFF,OxD9 -&gt; FFD9 </li>
+</ul>
+<p>Un listado de todas las cabeceras o firmas lo podemos encontrar en la siguiente URL: <a href="https://www.garykessler.net/library/file_sigs.html">https://www.garykessler.net/library/file_sigs.html</a> </p>
+<p>¿Qué herramienta podemos utilizar para aplicar esta técnica? <strong>Photorec</strong> </p>
+<p><strong>¿Sirve con los programas de borrado seguro? No, ya que no podemos identificar headers/footers conocidos al haber sido sobrescritos por ciertos patrones grupos de ceros.</strong> </p>
+<p>Photorec no funciona con formato de imagen Encase, solo en imágenes en RAW o sobre el dispositivo físico. </p>
+<p>Dispone de muchísimas cabeceras y tipos de ficheros:<a href="https://www.cgsecurity.org/wiki/File_Formats_Recovered_By_PhotoRec"> https://www.cgsecurity.org/wiki/File_Formats_Recovered_By_PhotoRec</a> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.014.jpeg" />
+</center></p>
+<p><strong>**Ver video: 03-Photorec</strong> </p>
+<p><strong>La técnica de carving no es válida para ficheros que estén desfragmentados ya que los clusters que ocupan el fichero no están contiguos.</strong> </p>
+<p>¿Qué podríamos recuperar mediante técnicas de carving? </p>
+<ul>
+<li>Registros MFT </li>
+<li>$Logfile </li>
+<li>$Usnjrnl </li>
+<li>Shadows Copies </li>
+<li>$I30 </li>
+</ul>
+<p>Las shadows se pueden recuperar gracias a la siguiente herramienta: <a href="https://github.com/mnrkbys/vss_carver">https://github.com/mnrkbys/vss_carver</a> </p>
+<p>En el github aparece como y qué comandos son necesarios para poder utilizarla: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.015.jpeg" />
+</center></p>
+<h4 id="stream-carving-vs-file-carving">Stream Carving vs File Carving</h4>
+<p>El data Stream Carving se basa en extraer fragmentos de las siguientes fuentes de </p>
+<p>información: </p>
+<ul>
+<li>Memoria / PageFile </li>
+<li>Espacio libre </li>
+<li>Ficheros de bases de datos Ejemplos: </li>
+<li>URLs (navegación privada) </li>
+<li>Sesiones de Chat </li>
+<li>E-mails </li>
+<li>Claves de Cifrado </li>
+</ul>
+<p>El <strong>data stream carvin</strong>g está basado en la localización de pequeños fragmentos y no en la búsqueda del fichero entero. Los pequeños fragmentos pueden tener un gran significado, pero normalmente son parte de un fichero. Por ejemplo, las bases de datos como el fichero index.dat puede contener cientos de URL que han sido visitadas cuando se borraron. Si no eres capaz de recuperar el fichero completo se podrían extraer fragmentos. </p>
+<p>El file Carving o carving a secas, puede extraer ficheros de: </p>
+<ul>
+<li>Memoria / PageFile </li>
+<li>Espacio libre Ejemplos: </li>
+<li>Word (.doc/.docx) </li>
+<li>Imágenes (.jpg,.png,.gif) </li>
+<li>Archivos (.zip /.rar) </li>
+</ul>
+<p>Una herramienta que permite hacer ambos tipos de recuperación es <strong>Bulk Extractor</strong>, soporta imágenes forenses en formato E01: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.016.jpeg" />
+</center></p>
+<p>También permite realizar carving de: </p>
+<ul>
+<li>Registros MFT </li>
+<li>$Logfile </li>
+<li>$Usnjrnl </li>
+<li>$I30 </li>
+</ul>
+<p><strong>** Ver video: 04-Bulk Extractor</strong> </p>
+<p>Una vez seleccionemos con Bulk Extractor la imagen a procesar, podemos ver el estado de cómo va avanzado: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.017.jpeg" />
+</center></p>
+<p>Todos los resultados los guardará sobre la carpeta que hemos indicado. </p>
+<h2 id="timeline">Timeline</h2>
+<p>El timeline o línea del tiempo nos permite obtener acotar en tiempo la investigación de una evidencia, por ejemplo: nos indican que la investigación está focalizada a raíz de la comunicación a un trabajador que va ser despedido. La compañía a raíz de esta comunicación ha visto un comportamiento sospechoso. </p>
+<ul>
+<li>Fecha de comunicación de despido: mínima fecha a investigar </li>
+<li>Fecha de salida de la compañía: máxima fecha a investigar </li>
+</ul>
+<p>Nuestro timeline estará basado únicamente en los timestamps del sistema de archivos, es decir, en las fechas de: </p>
+<ul>
+<li>Creación de fichero -&gt; C </li>
+<li>Modificación de fichero -&gt; M </li>
+<li>Cambio de registro MFT -&gt;B </li>
+<li>Acceso -&gt; A </li>
+</ul>
+<p>Estas fechas se le denomina MACB timestamp, para crear el Timeline podemos utilizar la herramienta Autopsy: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.018.png" />
+</center></p>
+<p><strong>** Ver video: 05-Autopsy</strong></p>
+<p>Otra manera de generar un Timeline, sería con la herramienta MFT2CSV, pero seleccionando el formato de salida log2timeline. Una vez se haya generado el CSV, deberemos de abrirlo con la herramienta TimeLine Explorer. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.019.jpeg" />
+</center></p>
+<p><strong>** Ver Video: 06-Timeline</strong> </p>
+<h2 id="metadatos-de-ficheros">Metadatos de ficheros</h2>
+<p>Los metadatos están definidos como estructura interna del propio fichero en sí. No tiene nada que ver con los metadatos que hemos visto del sistema de archivos. ¿Qué tipos de ficheros pueden contener metadatos? </p>
+<ul>
+<li>Imágenes </li>
+<li>Documentos ofimáticos </li>
+<li>Documentos de Audio </li>
+<li>Documentos de video </li>
+<li>Ejecutables </li>
+</ul>
+<p>¿Qué metadatos podemos encontrar en un fichero ofimático? </p>
+<ul>
+<li>Título </li>
+<li>Versión de MS Office Utilizada </li>
+<li>Último Autor </li>
+<li>Creación del documento /hora </li>
+<li>Última fecha de guardado </li>
+<li>Última fecha de impresión </li>
+</ul>
+<p>¿Qué metadatos podemos encontrar en una imagen? </p>
+<ul>
+<li>EXIF Data </li>
+<li>Marca Cámara / Modelo </li>
+<li>Hora de creación </li>
+<li>Hora de modificación </li>
+<li>Información de la imagen </li>
+<li>Coordenadas GPS </li>
+</ul>
+<p>Nota: Estos metadatos son muy fáciles de manipular. Para realizar una investigación correcta, se deben utilizar más artefactos y verificar dicha información. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.020.jpeg" />
+</center></p>
+<p><strong>** Ver Video: 07-Exif tool</strong> </p>
+<p>Exiftool también permite analizar de manera recursiva un directorio: <a href="https://owl.phy.queensu.ca/~phil/exiftool/examples.html">https://owl.phy.queensu.ca/~phil/exiftool/examples.html</a> </p>
+<p>Las fechas que aparecen como metadatos en el documento ofimático son introducidas por la herramienta ofimática. No confundir con las fechas del sistema de archivos. </p>
+<p>Un documento como tal nunca contendrá fechas a no ser que disponga de algún metadato dentro él. </p>
+<p>Otra herramienta muy buena para metadatos es Metadiver: <a href="https://www.easymetadata.com/metadiver-2/">https://www.easymetadata.com/metadiver-2/</a> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.021.png" />
+</center></p>
+<p>Características: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.022.png" />
+</center></p>
+<h3 id="lastvisited-mru-vs-opensavemru">LastVisited MRU vs OpenSaveMRU</h3>
+<p>Windows tiene cajas de diálogo que todos los programas usan. </p>
+<ul>
+<li>Tenemos dos tipos: </li>
+<li>LastVisitedMRU </li>
+<li>OpenSaveMRU </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.060.png" />
+</center> <center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.061.jpeg" />
+</center></p>
+<h4 id="lastvisitedmru">LastVisitedMRU</h4>
+<p>Este artefacto <strong>monitoriza qué aplicación</strong> abre o guarda el fichero que hemos visto en el OpenSaveMRU. Te indica la ruta donde abrió el fichero y el ejecutable </p>
+<p>Ruta: </p>
+<ul>
+<li><strong>NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32 \Last VisitedMRU</strong> -&gt; WinXP </li>
+<li><strong>NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32 \Last VisitedMRU LasVisitedPidlMRU</strong> -&gt; ( Win7-Win10) </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.062.png" />
+</center></p>
+<h4 id="opensavemru">OpenSaveMRU</h4>
+<p>Este artefacto monitoriza los ficheros que han sido abiertos o guardados dentro de una ventana de Windows. Esto no solamente ocurre con los navegadores sino con la mayoría de las aplicaciones. </p>
+<p>Ruta: </p>
+<ul>
+<li><strong>NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32 \Op enSaveMRU</strong> -&gt; Win XP </li>
+<li><strong>NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32 Op enSavePidlMRU</strong> -&gt; (Win7-Win10) </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.063.jpeg" />
+</center></p>
+<h3 id="ultimos-comandos-ejecutados">Últimos Comandos Ejecutados</h3>
+<p>Este artefacto, muestra los últimos comandos ejecutados desde el menú de ejecutar (RunBox): </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.064.png" />
+</center></p>
+<p>Ruta: </p>
+<ul>
+<li><strong>NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU</strong> </li>
+<li><strong>NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\Policies\RunRU</strong> </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.065.png" />
+</center></p>
+<h3 id="user-assistkey">User AssistKey</h3>
+<p>Todos los programas con interfaz gráfico que son ejecutados desde el escritorio son monitorizados por el launcher de Windows. </p>
+<p>Ruta: <strong>NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist{GUID}\Co unt</strong> </p>
+<p>El GUID es el identificador de la aplicación que se utiliza. Datos que podemos obtener: </p>
+<ul>
+<li><strong>Last Run Time (UTC)</strong> </li>
+<li><strong>Run Count: número de veces que se ha ejecutado</strong> </li>
+<li><strong>Nombre de la aplicación GUI</strong> </li>
+<li><strong>Focus Time: tiempo total que la aplicación ha tenido el foco.</strong> </li>
+<li><strong>Focus Count: número total de veces que la aplicación salió y entró del foco.</strong> </li>
+</ul>
+<p>El valor del nombre también tiene un significado en los User Assist Keys. El nombre de la clave siempre empezará por <strong>UEME_</strong> e irá seguido por: </p>
+<ul>
+<li><strong>RUNPATH: path absoluto del ejecutable. Un usuario normalmente ha clicado a través de la interfaz de Windows Explorer.</strong> </li>
+<li><strong>RUNCPL: para lanzar el panel de control.</strong> </li>
+<li><strong>RUNPIDL: puntero al fichero actual como un fichero LNK.</strong> </li>
+<li><strong>UIQCUT: cuenta las veces que ha sido lanzado a través del QUICKLaunch</strong> </li>
+<li><strong>UISCUT: cuenta las veces que ha sido lanzado a través de un acceso directo en el escritorio.</strong> </li>
+<li><strong>UITOOLBAT: información sobre los clicks de Windows Explorer ToolBar</strong> </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.066.jpeg" />
+</center></p>
+<p>Registry Explorer interpreta directamente los valores en la columna Program Name. </p>
+<h2 id="shell-items">Shell Items</h2>
+<p><strong>¿Qué es un shell item?</strong> Información o fichero que tiene información para acceder a </p>
+<p>otro fichero. </p>
+<p>Atributos: </p>
+<ul>
+<li>Tipo del target donde está el fichero: fijo, extraíble, red </li>
+<li>Path del fichero target: unidad, etiqueta del volumen </li>
+<li>Metadatos: MAC timestamps, tamaño, registro MFT, Número de secuencia </li>
+</ul>
+<p>Tipos: </p>
+<ul>
+<li>Accesos directos (LNK) </li>
+<li>Jumplists </li>
+<li>Shellbags </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.067.png" />
+</center></p>
+<p>Header de LNK </p>
+<p>Al tener un firma específica se podría realizar carving para recuperar los que se hayan borrado. </p>
+<h3 id="recent-documents-lnk">Recent Documents (LNK)</h3>
+<p>Windows crea este shortcut cuando un usuario abre o utiliza un fichero. </p>
+<p>Ruta: </p>
+<ul>
+<li>Win7-Win10: C:\Users\<user>\AppData\Roaming\Microsoft\Windows\Recent </li>
+<li>Office: C:\Users\<user>\AppData\Roaming\Microsoft\Office\Recent </li>
+<li>Máximo 149 ficheros y directorios </li>
+</ul>
+<p>Tipos: </p>
+<ul>
+<li>1- Fichero Target </li>
+<li>2- Directorio padre del fichero target </li>
+</ul>
+<p>Información: </p>
+<ul>
+<li>MAC Times del target File </li>
+<li>Información del volumen donde está el target file </li>
+<li>Directorio del target file </li>
+</ul>
+<p>Los archivos podrían haber sido borrados o eliminados, almacenados en un recurso compartido de red o USB, por lo que, aunque el archivo podría ya no estar allí, seguirá existiendo los archivos LNK asociados con el archivo original. Las fechas del sistema de archivos indican: </p>
+<ul>
+<li><strong>Fecha de creación-&gt; la primera vez que se abrió</strong> </li>
+<li><strong>Fecha de modificación -&gt; La última vez que se abrió.</strong> </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.068.png" />
+</center></p>
+<p><strong>Nuevo funcionamiento de Recent Documents en Windows 10</strong> </p>
+<ul>
+<li>Cuando un fichero es creado, también se crea su LNK en el RECENT (anteriormente solo cuando se abría). Se mantiene las fechas del sistema de archivo. </li>
+<li>Cuando una carpeta es creada en un directorio, la carpeta, la carpeta padre y la carpeta abuelo son creados como LNK en el RECENT. </li>
+<li>El mayor cambio es que ahora en los ficheros LNK se incluye la extensión y antes no. </li>
+</ul>
+<p>Nuevos tipos de LNK con URLs en Windows 8/10 </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.069.png" />
+</center></p>
+<p>¿Cómo se generó este tipo de LNK? </p>
+<ol>
+<li>Run Dialog </li>
+<li>Windows Search Charm </li>
+<li>A través de un fichero LNK </li>
+<li>A través de un link de una aplicación </li>
+</ol>
+<p>Herramienta para analizar ficheros LNK: <strong><a href="https://4discovery.com/our-tools/link-parser/">LINKPARSER</a></strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.070.jpeg" />
+</center></p>
+<p>Campos: </p>
+<ul>
+<li>Link: son las fechas del destino UTC, es decir, las fechas del sistema de archivos del fichero en sí. </li>
+<li>File: son las fechas propias del LNK del UTC </li>
+<li>El hash MD5 es el del propio LNK, nunca del fichero en sí. </li>
+<li>MAC Address del equipo donde está el fichero original. </li>
+<li>Volume Label: Etiqueta del volumen </li>
+<li>DriveType: tipo de medio -&gt; muy útil para dispositivos USB </li>
+</ul>
+<p><strong>** Ver Video:10-LinkParser</strong> </p>
+<p><strong><a href="https://github.com/EricZimmerman/LECmd">LeCMD</a></strong>: otra herramienta para analizar LNK </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.071.jpeg" />
+</center></p>
+<p><strong>** Ver Video: 11-LECMD</strong> </p>
+<h3 id="jumplists">Jumplists</h3>
+<p>Los usuarios pueden “saltar” a los archivos recientemente abiertos. Para las investigaciones forenses proporciona otra ubicación donde verificar la creación de ficheros no ejecutables. </p>
+<p>Esto debe coincidir con el registro de RecentDocs, Recent Docs *ext, Office Recent Docs y los ficheros LNK en el Recent Folder. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.072.png" />
+</center></p>
+<p>Hay dos tipos de Jumplists: </p>
+<ul>
+<li>automáticos que son creados por cada aplicación de Windows </li>
+<li>custom que son creados con el desarrollo específico de la aplicación. </li>
+</ul>
+<p>Los dos se pueden encontrar en el Recent Folder. </p>
+<p><strong>Dentro de cada fichero JUMPLIST puede haber fechas propias:</strong> creación de la entrada, modificación de la entrada y último acceso a la entrada. En la imagen superior, para el fichero documento_prueba.docx podría tener estas fechas. </p>
+<p><strong>Automatic destinations</strong> está en el siguiente directorio: </p>
+<ul>
+<li><strong>C:\Users\<profile>\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDes tinations.</strong> </li>
+</ul>
+<p>Contiene una lista de aplicaciones ordenadas por AppID. Los nombres están en el formato <strong>XXXXXXXX.autmaticDestinations-ms</strong> </p>
+<ul>
+<li><strong>Creation Time</strong>: Primera fecha de ejecución (a nivel el sistema de archivos) </li>
+<li><strong>Modificación time</strong>: última fecha de ejecución de la aplicación (a nivel el sistema de archivos) </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.073.png" />
+</center></p>
+<p>La información almacenada en el directorio de Automatic Destinations tiene que tener un único archivo con el AppID. </p>
+<p><strong>Custom Destinations</strong> está en el siguiente directorio: </p>
+<ul>
+<li><strong>C:\Users\<profile>\AppData\Roaming\Microsoft\Windows\Recent\CustomDestin ation</strong> </li>
+</ul>
+<p>Son creados por cada aplicación y por lo tanto “custom” </p>
+<p>Un Jumplist customizado está destinado a presentar el contenido que la aplicación ha establecido como importante basado en el uso previo o a través de una acción que ha sido indicada por el usuario como importante, tal como añadir el ítem a favoritos o anclar la aplicación a la barra de inicio. También tienen una APPID. </p>
+<ul>
+<li><strong>Creation Time</strong> (a nivel el sistema de archivos): primera vez de ejecución. </li>
+<li><strong>Modificación time</strong>: última vez que la aplicación fue añadida al fichero en concreto (a nivel el sistema de archivos) </li>
+</ul>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.074.png" />
+</center></p>
+<p><strong>Los Jumplist evidencian que una aplicación específica existió y se ejecutó.</strong> </p>
+<p>Cada Jumplist, sea automático o custom, tiene su AppID. Este tipo de identificador está asociado a un programa en concreto como vemos en la imagen siguiente: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.075.jpeg" />
+</center></p>
+<p><a href="https://www.forensicswiki.org/wiki/Jump_Lists">https://www.forensicswiki.org/wiki/Jump_Lists</a> </p>
+<p>Herramienta para analizar Jumplist: <strong><a href="https://www.sans.org/tools/jumplist-explorer/">JumpList Explorer</a></strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.076.jpeg" />
+</center></p>
+<p><strong>** Ver Video: 12-JumplistExplorer</strong> </p>
+<h3 id="shellbags">Shellbags</h3>
+<p>Los sistemas Windows almacenan las opciones de visualización de Windows Explorer mediante entradas de registro y son conocidas como ShellBags. </p>
+<ul>
+<li>Esto nos permite saber qué directorio han sido accedidos a nivel local, de red o dispositivos extraíbles. </li>
+<li>Evidencia la existencia de directorios previos. </li>
+<li>Localización de las Shellbags: </li>
+</ul>
+<p>Explorer Access: </p>
+<ul>
+<li><strong>USRCLASS.DAT\Local Settings\Software\Microsoft\Windows\Shell\Bags</strong> </li>
+<li><strong>USRCLASS.DAT\LocalSettings\Software\Microsoft\Windows\Shell\BagMRU</strong> </li>
+</ul>
+<p>Desktop Access: </p>
+<ul>
+<li><strong>NTUSER.DAT\Software\Microsoft\Windows\Shell\BagMRU</strong> </li>
+<li><strong>NTUSER.DAT\Software\Microsoft\Windows\Shell\Bags</strong> </li>
+</ul>
+<p>Los documentos de Microsoft tienen Shellbags adicionales y están presentes en los sistemas Win7-Win10 </p>
+<p>La existencia de dicha entrada en el registro prueba que usuario especificó visitó al menos una vez ese directorio. </p>
+<p>Para analizar los shellbags, vamos a utilizar <strong><a href="https://www.sans.org/tools/shellbags-explorer/">Shelbag Explorer</a></strong>: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.077.png" />
+</center></p>
+<p>Respecto a los timestamps: </p>
+<ul>
+<li>En azul corresponde con los MAC times del sistema de archivos de la carpeta PPT </li>
+<li>En rojo es la información propia de shellbag, donde indica la última interacción con la carpeta PPT y cuál fue la primera. </li>
+<li>También indica el sistema de archivos sobre el que estaba la carpeta. </li>
+</ul>
+<p><strong>** Ver Video:13-ShellbagExplorer</strong> </p>
+<p>Hasta ahora hemos dicho: </p>
+<ul>
+<li>Evidenciar que se ha ejecutado mediante el análisis del UserAssist </li>
+<li>Evidenciar que se ha “tocado” realizando un timeline del sistema de archivos o del registro. </li>
+<li>Evidenciar que directorios has abierto mediante el análisis de Shellbags. </li>
+</ul>
+<h2 id="thumbnails">Thumbnails</h2>
+<p>Cuando un usuario previsualiza una carpeta de tal manera que la organiza mediante thumbnails, se crea un fichero oculto “thumbs.db” que almacena la preview de imágenes en hay en la carpeta, incluso si las imágenes fueron borradas. </p>
+<p><strong>Thumbs.db</strong> </p>
+<ul>
+<li><strong>WinXP/Win8-8,1 -&gt; Creado automáticamente</strong> </li>
+<li>*<em>Win7/Win10 -&gt; Automática creado si es accedido vía UNC Path -&gt; \ruta\ruta*</em> </li>
+</ul>
+<p>¿Qué hay en el Thumbs.db? </p>
+<ul>
+<li>Imagen pequeña de la imagen original incluso si es borrada </li>
+<li>Última fecha de modificación -&gt; Windows XP </li>
+<li>Nombre original -&gt; Windows XP </li>
+</ul>
+<p>Herramienta que analiza el fichero Thumbs.db: Thumbsviewer </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.104.png" />
+</center></p>
+<p>thumbsviewer.github.io </p>
+<h2 id="thumbcache">Thumbcache</h2>
+<p>El Thumcache, es la evolución del thums.db. Su funcionamiento es el mismo. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.105.png" />
+</center></p>
+<p>Ruta: <strong>C:\Users\<username>\AppData\Local\Microsoft\Windows\Explorer</strong> </p>
+<ul>
+<li>Solo Thumbnails </li>
+<li>Localización de donde estuvo ese thumbnail </li>
+<li>Solo para Windows 7 / 8 / 10 </li>
+</ul>
+<p>En la carpeta anterior, se encuentran los preview de las imágenes en función del tamaño. De esta manera se adapta a los requisitos del usuario. </p>
+<ul>
+<li>Thumbcache_32.db -&gt; small </li>
+<li>Thumbcache_96.db -&gt; medium </li>
+<li>Thumbcache_256.db -&gt; large </li>
+<li>Thumbcache_1024.db -&gt; extra large </li>
+</ul>
+<p>Herramienta ThumbCache Viewer</p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.106.png" />
+</center></p>
+<h2 id="papelera-de-reciclaje">Papelera de Reciclaje</h2>
+<p>Carpeta oculta del sistema que contiene un subdirectorio con el SID del usuario. EL SID del usuario lo podemos obtener el fichero SAM. </p>
+<p><strong>RECYCLER -&gt; 2000/NT/XP/2003</strong> </p>
+<ul>
+<li>Archivo oculto llamado INFO2 </li>
+<li>Contiene la fecha de borrado y el nombre del archivo original </li>
+</ul>
+<p><strong>$Recycle.bin -&gt; Vista/Win7/Win8/Win10</strong> </p>
+<ul>
+<li>El archivo es ASCII y UNICODE </li>
+<li>La fecha del borrado y el nombre del fichero original borrado están en ficheros distintos </li>
+<li>$I -&gt; Información del fichero (fecha de borrado) </li>
+<li>$R -&gt; el contenido del fichero </li>
+</ul>
+<p><strong>Solo</strong> los ficheros que son <strong>borrados desde el Explorer de Windows</strong>, van a esta localizacion. No es un borrado como tal, ya que los ficheros se encuentran disponibles. </p>
+<p>Si el usuario realiza <strong>SHIFT + borrado el fichero no pasa por la papelera de reciclaje.</strong> </p>
+<p>A nivel del sistema de archivos, el fichero original es movido a la papelera de reciclaje y renombrado con $R{nombre} y se crea un fichero con $I{nombre} que contiene la fecha del “borrado”. El borrado real, se procederá de verdad cuando la papelera se haya vaciado. </p>
+<p><strong>Herramienta</strong> para procesar la papelera: <strong><a href="https://abelcheung.github.io/rifiuti2/">Rifiuti</a>.</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.107.png" />
+</center></p>
+<p>Dos versiones de la herramienta en función del sistema operativo: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.108.png" />
+</center></p>
+<p><strong>** Ver Video:16-Rifitui</strong> </p>
+<h2 id="ejecucion-de-programas">Ejecución de programas</h2>
+<p>En esta sección vamos a ver todos los artefactos forenses que indiquen la ejecución de un programa. </p>
+<h3 id="windows-prefetch">Windows Prefetch</h3>
+<p>La misión de Windows Prefetch es incrementar el rendimiento del sistema con una precarga del ejecutable. El cache manager monitoriza todos los ficheros y directorios y los mapea contra el fichero .pf (el fichero .pf será el artefacto forense que analizaremos) </p>
+<ul>
+<li>Deshabilitado en sistemas con disco SSD </li>
+<li>Muestra cómo y cuándo un binario se ejecutó </li>
+</ul>
+<p>Ruta: <strong>C:\Windows\Prefetch</strong> </p>
+<ul>
+<li>Limitado a 128 ficheros en XP/VISTA/WIN7 </li>
+<li>Limitado a 1024 ficheros en Win8/Win10 </li>
+<li>{Nombre_ejecutable}-{hash}.pf </li>
+<li>Windows 10 los prefetch vienen comprimidos </li>
+<li>El hash está basado en el path del ejectuable y los argumentos que reciben </li>
+</ul>
+<p>Ruta: <strong>C:\Windows\Prefetch\Layout.ini</strong> </p>
+<ul>
+<li>El fichero layout.ini contiene los nombres de los directorios de los ficheros que están en el Prefetch </li>
+<li>El desfragmentador de disco utiliza el layout.ini para realojar todos los directorios y ficheros en un área contigua del disco. </li>
+</ul>
+<p>¿Qué indica este artefacto forense? </p>
+<ul>
+<li>Número de ejecuciones (hasta 8 veces puede registrar) </li>
+<li>Fechas de las ejecuciones (UTC) </li>
+<li>El propio fichero, ya indica la ejecución del programa </li>
+<li>Ficheros abiertos por el programa </li>
+</ul>
+<p><strong>Herramienta</strong> para analizar los Prefetch: <strong><a href="https://github.com/EricZimmerman/PECmd">PeCMD</a></strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.109.jpeg" />
+</center></p>
+<p>Resultado de ejecutar PeCMD </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.110.jpeg" />
+</center></p>
+<p>** Ver Vídeo Prefetch - 011 </p>
+<h3 id="superfetch">SuperFetch</h3>
+<p>Superfetch consiste en una serie de bases de datos localizados en la carpeta C:\Windows\Prefetch\Ag*.db, que tienen como misión optimizar el uso de memoria. <strong>No reemplaza al servicio Prefetch</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.111.png" />
+</center></p>
+<p>¿Qué podemos obtener? </p>
+<ul>
+<li>Nombre de la aplicación </li>
+<li>Número de ejecuciones </li>
+<li>Ficheros necesarios que son utilizados por el binario. </li>
+<li>Volumen accedido </li>
+<li>Path completo </li>
+<li>TimeFrames </li>
+<li>Timestamp </li>
+</ul>
+<p>Herramienta para analizar el Superfetch: <strong>CrowdResponse</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.112.png" />
+</center></p>
+<p><a href="https://www.crowdstrike.com/resources/community-tools/crowdresponse/">https://www.crowdstrike.com/resources/community-tools/crowdresponse/</a> </p>
+<h3 id="srum">SRUM</h3>
+<p>System Resource Usage Monitor (SRUM) es un artefacto forense que está destinado a monitorizar los recursos que consume un proceso. </p>
+<p>Ruta: <strong>C:\Windows\System32\sru\SRUDB.dat</strong> </p>
+<ul>
+<li>A partir de Windows 8 </li>
+<li>Es una Base de datos en formato ESE </li>
+</ul>
+<p>Se ha llegado a identificar hasta 60 días de monitorización y nos puede indicar: </p>
+<ul>
+<li>AppID y Path <center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.113.jpeg" />
+</center></li>
+<li>Usuario que ejecuta </li>
+<li>Bytes enviados </li>
+<li>Bytes recibidos </li>
+<li>Interfaz de red </li>
+<li>Tiempo de conexión </li>
+<li>Tiempo de duración </li>
+</ul>
+<p><strong>El Prefetch indica el arranque de un proceso, pero no la duración:</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.114.jpeg" />
+</center></p>
+<p>Ejemplo del proceso: Explorer.exe </p>
+<p>La actividad es actualizada cada 60 min en la base de datos o durante un apagado correcto </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.115.jpeg" />
+</center></p>
+<p>Si realizamos un apagado incorrecto hay que reparar la base de datos ESE mediante el comando: <strong>esentul /mh SRUDB.dat</strong> </p>
+<p><strong>Herramienta</strong> que nos permite analizar el fichero SRUDB.dat: <strong><a href="https://www.sans.org/tools/srum-dump/">SRUM DUMP</a></strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.116.jpeg" />
+</center></p>
+<p><strong>** Ver Video:17-SRUM</strong> </p>
+<p>Lo resultados de ejecutar la herramienta SRUM DUMP, donde se identifica el proceso junto con su timestams y los bytes que ha enviado y recibido: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.117.png" />
+</center></p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.118.png" />
+</center></p>
+<h3 id="appcompatcache-shimcache">AppCompatCache (ShimCache)</h3>
+<p>Se encarga de chequear la compatibilidad de la aplicación dentro del sistema operativo. Verifica si la aplicación necesita aplicarse ciertas propiedades en el actual sistema operativo o funcionar viejos sistemas operativos. </p>
+<p><strong>Appcompatcache monitorizará del ejecutable:</strong> </p>
+<ul>
+<li>Fecha de última modificación: $STANDARD_INFORMATION </li>
+<li>Path donde se encuentra </li>
+<li>Y si fue ejecutado </li>
+</ul>
+<p>Si la aplicación sufre una modificación o actualización, será nuevamente actualizada Ruta: </p>
+<ul>
+<li><strong>SYSTEM\CurrentControlSet\Control\SessionManager\Appcompatibility\Appco mpat Cache -&gt; XP -&gt; 96 entradas</strong> </li>
+<li><strong>SYSTEM\CurrentControlSet\Control\SessionManager\AppcompatCache\AppCo mp atCache -&gt; Server 2003 (512 entradas) y 2008/2012/2016 – Win7/Win8/Win10 (1024 entradas)</strong> </li>
+</ul>
+<p>Cuando se modifican las propiedades de una aplicación, se crean entradas en el registro. Todo programa (.exe, .bat,.dll) es chequeado con la base de datos para buscar una compatibilidad. Este es el artefacto forense que encontramos.</p>
+<p><strong>Solo se actualiza cuando el sistema es apagado y no antes.</strong> </p>
+<ul>
+<li>Eventos más recientes están al principio </li>
+<li>Nuevos eventos se escriben al ser apagado. </li>
+</ul>
+<p>¿Qué podemos evidenciar? </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.119.png" />
+</center></p>
+<p><strong>Herramienta</strong> que permite analizar el AppCompatCache: <strong><a href="https://github.com/EricZimmerman/AppCompatCacheParser">AppCompatCache (ShimCache) Parser</a></strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.120.jpeg" />
+</center></p>
+<p><strong>** Ver video:18- Shimcache</strong> </p>
+<p>Resultado de ejecutar AppCompatCache y llevarlo a TimelineExplorer: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.121.jpeg" />
+</center></p>
+<h3 id="amcachehve">Amcache.hve</h3>
+<p>Artfacto forense, que es un registro en sí mismo con la siguiente ruta: <strong>C:\Windows\AppCompat\Programas\Amcache.hve (Windows 7/8/8.1/10 y 2012/2016)</strong> </p>
+<ul>
+<li>Keys: Amcache.hve\Root\File{Volume GUID}###### -&gt; Para el Formato Antiguo </li>
+<li>Hay una entrada por cada ejecución, información del directorio, fecha última modificación $StandarInfo y el volumen desde el que ejecutó (GUID de volumen) </li>
+<li>La primera vez que se ejecutó: última modificación de la clave de registro </li>
+<li>El SHA1 del ejecutable también está en el registro </li>
+</ul>
+<p>Lo analizamos con la Herramienta <strong><a href="https://github.com/EricZimmerman/AmcacheParser">AmcacheParser</a></strong>: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.122.jpeg" />
+</center></p>
+<p><strong>** Ver Video: 19-Amcache</strong> </p>
+<p>Resultado de la ejecución AmCacheParser: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.123.jpeg" />
+</center></p>
+<h3 id="recentfilecache">RecentFileCache</h3>
+<p>Este artefacto solo se encuentra en Windows 7 y en la siguiente ruta: <strong>C:\Windows\AppCompat\Programs\RecentFileCache.bcf</strong> </p>
+<p>Contiene la ejecución de binarios más reciente en el sistema Windows 7. Para ver de manera más detallada cómo se crea este artefacto forense: </p>
+<p><a href="http://journeyintoir.blogspot.com/2013/12/revealing-recentfilecachebcf-file.html">http://journeyintoir.blogspot.com/2013/12/revealing-recentfilecachebcf-file.html</a> Para analizar este artefacto utilizaremos la <strong>herramienta <a href="https://github.com/EricZimmerman/RecentFileCacheParser">RecentFileCacheParser</a></strong>: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.124.jpeg" />
+</center></p>
+<p>Como siempre, deberemos extraer previamente el artefacto forense mediante Access Data FTK de la ruta anteriormente indicada para que esta herramienta sea capaz de interpretar y analizar. Abrimos un CMD para ejecutar la herramienta e indicarle donde se encuentra el artefacto extraído: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.125.jpeg" />
+</center></p>
+<p>Finalmente abrimos el fichero CSV generado. Hay que tener cuidado que la extensión es un TSV, es decir un fichero generado por tabulaciones. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.126.png" />
+</center></p>
+<p>Lo abrimos con OpenOffice, cambiándole la extensión a “CSV”. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.127.jpeg" />
+</center></p>
+<p>Finalmente disponemos una tabla con la ejecución de los binarios.</p>
+<h3 id="tareas-programadas">Tareas Programadas</h3>
+<p>Un malware o backdoor puede utilizar las tareas programadas como mecanismo de </p>
+<p>persistencia </p>
+<p>Ruta: <strong>C:\Windows\Tasks o C:\Windows\System32\Tasks</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.128.jpeg" />
+</center></p>
+<p>Podemos extraerlas con Arsenal Image Mounter las tareas para analizarlas. Aunque no tengan extensión, una vez extraídas se puede abrir con el Notepad y verlas como un fichero XML: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.129.jpeg" />
+</center></p>
+<p>La fecha de cuando se añadió, la podemos sacar de las propiedades del sistemas de archivos, gracias a FTK Imager: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.130.png" />
+</center></p>
+<h3 id="servicios">Servicios</h3>
+<p>Los servicios del sistema operativo, los podemos encontrar en la siguiente clave de registro: Ruta: <strong>SYSTEM\ControlSet001\Services</strong> </p>
+<p>Lo analizamos con <strong>Registry Explorer</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.131.jpeg" />
+</center></p>
+<p>Campos por destacar: </p>
+<ul>
+<li>Display Name: nombre del servicio </li>
+<li>Start mode: el tipo de arranque </li>
+<li>Image Path: ejecutable con los argumentos que recibe </li>
+<li>Name Key Last Write: última vez que se actualizo la clave del registro </li>
+<li>Parameters Key Last Write: última vez que se cambiaron los parámetros </li>
+</ul>
+<h2 id="navegadores">Navegadores</h2>
+<h2 id="email-forensics">Email Forensics</h2>
+<p>¿Qué información podemos encontrar analizando un email? </p>
+<ul>
+<li>¿Quién envió el email? -&gt; dirección de correo, dirección IP, pruebas de contexto </li>
+<li>¿Cuándo fue enviado? -&gt; Timestamp en la cabecera, timestamp de los servidores </li>
+<li>¿Desde donde fue enviado? Dirección IP / ISP, Geolocalización, Mail server domain, Message ID </li>
+<li>¿Es el contenido relevante?. Message Body, Adjuntos, libreta de direcciones, Entradas de calendario</li>
+</ul>
+<h3 id="cabecera-de-correo-electronico">Cabecera de correo electrónico</h3>
+<p>Podemos encontrar en la cabecera la fecha de cuando se envió el correo electrónico, el message ID, el destinatario, el remitente. </p>
+<p>---&gt; Header <center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.095.jpeg" />
+</center></p>
+<p>---&gt; Cuerpo </p>
+<p>---&gt; Adjunto </p>
+<p>También podemos saber cuándo fue recibido el correo electrónico por el servidor SMTP mediante el campo: “Received” </p>
+<h3 id="message-id">Message ID</h3>
+<p>El message ID lo proporciona el servidor que envía el email y consiste en un único identificador añadido al nombre del servidor con la @. </p>
+<p>Este campo puede ser utilizado para identificar mensajes relacionados gracias al tag <strong>References</strong> y <strong>In-Reply-To</strong>: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.096.png" />
+</center></p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.097.png" />
+</center></p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.098.png" />
+</center></p>
+<p>En la conversación anterior, se puede ver el histórico de Message ID que hay. Esto indica que debe haber también cuatro mensajes. Uno por cada Message ID. </p>
+<h3 id="mapi-headers">Mapi Headers</h3>
+<p>Si estás realizando una investigación donde hay un servidor Exchange o clientes tales como Microsoft Outlook, debes ser consciente que las propiedades MAPI (Microsoft Messaging Application Programing Interface) estarán presentes. Son unas cabeceras adicionales que nos van a permitir extraer más información de un simple correo electrónico: </p>
+<ul>
+<li><strong>Mapi-Client-Submit-Time:</strong> la fecha del sistema local cuando el email fue enviado por el cliente. </li>
+<li><strong>Mapi-Conversation-Index:</strong> indica cuántos mensajes hijos fueron parte de la cadena de emails y registra los timestamps para cada mensaje en la cadena. </li>
+<li><strong>Mapi-Entry-ID:</strong> un identificador de mensaje dentro del almacenamiento como PST. Puede ayudar a identificar si un usuario disponía de varios ficheros PSTs. </li>
+<li><strong>Mapi-Message-Flags y Pr_last_Verb_Executed</strong>: proporciona información detallada de las acciones que ocurrieron en un Cliente MAPI: Leído, sin leer, respondidos, reenviados, fuera de la oficina </li>
+</ul>
+<h3 id="outlook-pst">Outlook PST</h3>
+<p>El cliente de correo por excelencia de sistemas Windows, es Microsoft Outlook. Todos los mensajes enviados, recibidos, contactos y calendario se almacenan en un fichero PST. </p>
+<p>Fichero almacenado por defecto: </p>
+<ul>
+<li><strong>%USERPROFILE%\LocalSettings\ApplicationData\Microsoft\Outlook (WinXP y anteriores)</strong> </li>
+<li><strong>%USERPROFILE%\AppData\Local\Microsoft\Outlook -&gt; Win7 / Win8 y en adelante</strong> </li>
+</ul>
+<p>La clave de registro nos puede indicar qué archivos están siendo utilizados. </p>
+<ul>
+<li><strong>HKEY_CURRENT_USER\Software\Microsoft\WindowsNT\CurrentVersion\Windo ws Messagin Subsystem\Profiles\Outlook</strong> </li>
+<li><strong>El Archivo tiene un tamaño máximo de 50 GB</strong> </li>
+</ul>
+<p>Si no lo encontrásemos, deberíamos buscar por extensión o realizar técnica de recuperación de datos, ya que el fichero PST dispone de cabecera conocida. Se podría realizar mediante Photorec. </p>
+<p>Herramienta para ver ficheros PST: <strong>Kernel PST Viewer</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.099.jpeg" />
+</center></p>
+<h3 id="outlook-ost">Outlook OST</h3>
+<p>Microsoft Outlook genera un fichero OST cuando la cuenta ha sido configurada mediante IMAP o mediante Exchage. Al igual que en PST, almacena mensajes enviados, recibidos, contactos, calendario. El buzón local (fichero OST) de mensajes está sincronizado con el servidor. </p>
+<ul>
+<li>Últimos 12 meses de email por defecto </li>
+<li>Fichero máximo de 50gb </li>
+<li>La ruta es la misma que el fichero PST </li>
+<li>Se puede realizar técnicas de carving para recuperarlo </li>
+</ul>
+<p>Herramienta: <strong>Kernel OST Viewer</strong> </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.100.jpeg" />
+</center></p>
+<p><strong>** Ver video: 15 - Kernel OST Viewer</strong> </p>
+<p>Hay que tener en cuenta que se puede recuperar un fichero OST/PST del sistema de archivos porque se haya borrado, o recuperar emails borrados de dentro del fichero OST/PST. En el caso de ficheros OST, existe una herramienta de pago: <a href="https://www.kerneldatarecovery.com/ost-recovery.html">https://www.kerneldatarecovery.com/ost-recovery.html</a> </p>
+<h3 id="recuperacion-de-adjuntos">Recuperación de Adjuntos</h3>
+<p>Microsoft Outlook utiliza un Directorio temporal seguro para abrir los adjuntos de los mensajes de correo electrónico: </p>
+<ul>
+<li><strong>%APPDATA%\Local\Microsoft\Windows\TemporaryInternetFiles\Content.Outlook -&gt; IE10</strong> </li>
+<li><strong>%APPDATA%\Local\Microsoft\InetCache\Content.Outlook -&gt; IE11+</strong> </li>
+</ul>
+<p>Antes de la versión de Outlook 2007, los mensajes quedan guardados siempre. </p>
+<p>Después de la versión de Outlook 2007 en adelante, los adjuntos están, mientras que el correo electrónico esté abierto o quedaría en esa carpeta si Outlook es cerrado correctamente. </p>
+<h3 id="thunderbird-mbox">Thunderbird MBOX</h3>
+<p>El cliente de correo Thunderbird almacena la información en ficheros MBOX. Estos ficheros pueden ser encontrados en la siguiente ruta: </p>
+<p><strong>\Users\%USERNAME%\AppData\Roaming\Thunderbird\Profiles</strong> </p>
+<p>Para poder leer este fichero MBOX sin la necesidad de Thunderbird podemos recurrir a Autopsy. Creamos un nuevo caso como hemos visto anteriormente, pero esta vez, en vez de añadir una imagen forense vamos añadir un fichero, en este caso el fichero MBOX. </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.101.jpeg" />
+</center></p>
+<p>Después seleccionamos el “Email Parser” para que pueda extraer los emails contenidos en el fichero MBOX </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.102.jpeg" />
+</center></p>
+<p>Este Módulo, es capaz también de leer ficheros PST y OST. Una vez que haya terminado de analizar el fichero MBOX podremos acceder a los correos en la siguiente sección: </p>
+<p><center>
+<img alt="" src="../assets/ud2/Aspose.Words.0fc2981f-2ed6-4cfc-85c8-1e8615970e50.103.png" />
+</center></p>
+<h2 id="plataformas-y-herramientas-de-analisis">Plataformas y herramientas de análisis</h2>
+<p>Existen en el mercado una cantidad inimaginable de herramientas forenses, es decisión de cada investigador elegir aquellas que mas se adapten a su forma de trabajar. Mi recomendación es que vayáis probando herramientas, tanto las recogidas en la unidad didácticaes como aquellas que encontréis y recojáis en vuestra herramienta de notas todas aquellas que os puedan ser útiles para el futuro.</p>
+<h3 id="algunos-repositorios-muy-conocidos">Algunos repositorios muy conocidos:</h3>
+<ul>
+<li><a href="https://forensicswiki.xyz">Forensic Wiki</a></li>
+<li><a href="https://ericzimmerman.github.io/#!index.md">Eric Zimmermanś Tools</a></li>
+<li><a href="https://www.sans.org/tools/?focus-area=digital-forensics">SANS Tools Collection</a></li>
+<li><a href="https://www.ciberforense.com.es/?p=2777">Free Forensics Software – The Ultimate List</a></li>
+<li><a href="https://drive.google.com/file/d/1J-9ti_P-qjHtBfxmVBm-tWgit0u2aYau/view?usp=share_link">Repo de herramientas de análisis forense windows</a></li>
+</ul>
+<h3 id="ejemplos-de-plataformas-preconfiguradas">Ejemplos de plataformas preconfiguradas</h3>
+<ul>
+<li><a href="https://forensicswiki.xyz/wiki/index.php?title=Tools#Disk_Analysis_Tools">Disk_Analysis_Tools (Forensic Wiki)</a></li>
+<li><a href="https://www.autopsy.com/download/">Autopsy </a></li>
+<li><a href="http://www.caine-live.net/">Caine</a></li>
+</ul>
+<h2 id="windows-forensics-cheat-sheets">Windows Forensics Cheat Sheets</h2>
+<ul>
+<li><a href="https://drive.google.com/file/d/1KU0RXlEruPGkP5zsaAp_REJETRHRIoEQ/view?usp=sharing">SANS_Windows Forensic Analysis Poster</a></li>
+<li><a href="https://drive.google.com/file/d/1PAuJpk3pnG5HV_HF6e5RuLidTI42hnsJ/view?usp=sharing">SANS_Windows Third Party Forensics Poster</a></li>
+</ul>
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Contenido generado por el equipo educativo de ciberseguridad del IES Rafael Alberti
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://twitter.com/fpcibersec" target="_blank" rel="noopener" title="Ciberseguridad del IES Alberti en Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "header.autohide"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      
+    
+  </body>
+</html>
